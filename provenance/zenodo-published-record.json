@@ -1,0 +1,147 @@
+{
+  "created": "2026-10-24T07:54:55.842067+00:00",
+  "modified": "2026-10-24T07:54:56.134772+00:00",
+  "id": 23611588,
+  "conceptrecid": "23558750",
+  "doi": "10.5281/zenodo.23611588",
+  "conceptdoi": "10.5281/zenodo.23558750",
+  "doi_url": "https://doi.org/10.5281/zenodo.23611588",
+  "metadata": {
+    "title": "Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories",
+    "doi": "10.5281/zenodo.23611588",
+    "publication_date": "2026-10-24",
+    "description": "<p>We prove necessary residual-dimension conditions for null-projected supersymmetric Yang-Mills constructions under five explicit assumptions N1-N5. A full-corner Majorana-Weyl gaugino gives k at most min(s,t), residual dimension s+t-2k in {2,10}, and signature difference in {8,0,-8}. Direct contractions determine the cubic identity and fermionic source. A separate unitary massless argument gives a helicity-span bound with vanishing tensor charges. The two PDFs contain the same mathematical manuscript in alternative layouts for direct submission to Physical Review D and Annals of Physics; they are not separate papers. General arguments are written in full, with supplementary gamma-matrix checks and disclosed AI assistance. These necessary obstructions do not construct theories in every allowed signature or a nonperturbative quantum model. Sole author: Deep Bhattacharjee. Original preprint: https://hexagonmath.org/2610.00471v1 . Editable sources and verification files: https://github.com/creelie/Paper_4 . No journal submission or acceptance is claimed.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Bhattacharjee, Deep",
+        "affiliation": "Formerly, EGSPL, Bhubaneswar, India; formerly, University of Calcutta, Kolkata, India",
+        "orcid": "0000-0003-0466-750X"
+      }
+    ],
+    "keywords": [
+      "supersymmetric Yang-Mills theory",
+      "two-time physics",
+      "signature of space-time",
+      "null projection",
+      "Fierz identity",
+      "division algebras",
+      "Majorana-Weyl spinors"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/creelie/Paper_4",
+        "relation": "isSupplementedBy",
+        "resource_type": "software",
+        "scheme": "url"
+      }
+    ],
+    "version": "1.1.0",
+    "custom": {
+      "code:codeRepository": "https://github.com/creelie/Paper_4"
+    },
+    "resource_type": {
+      "title": "Preprint",
+      "type": "publication",
+      "subtype": "preprint"
+    },
+    "license": {
+      "id": "mit-license"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 3,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "23558750"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories",
+  "links": {
+    "self": "https://zenodo.org/api/records/23611588",
+    "self_html": "https://zenodo.org/records/23611588",
+    "preview_html": "https://zenodo.org/records/23611588?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.23611588",
+    "self_doi": "https://doi.org/10.5281/zenodo.23611588",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23611588",
+    "reserve_doi": "https://zenodo.org/api/records/23611588/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/23558750",
+    "parent_html": "https://zenodo.org/records/23558750",
+    "parent_doi": "https://doi.org/10.5281/zenodo.23558750",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23558750",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23611588/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23611588/sequence/default",
+    "files": "https://zenodo.org/api/records/23611588/files",
+    "media_files": "https://zenodo.org/api/records/23611588/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:23611588:Paper_4_PRD.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:23611588:Paper_4_PRD.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:23611588:Paper_4_PRD.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:23611588:Paper_4_PRD.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:23611588:Paper_4_PRD.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:23611588:Paper_4_PRD.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/23611588/versions/latest",
+    "latest_html": "https://zenodo.org/records/23611588/latest",
+    "versions": "https://zenodo.org/api/records/23611588/versions",
+    "draft": "https://zenodo.org/api/records/23611588/draft",
+    "access_links": "https://zenodo.org/api/records/23611588/access/links",
+    "access_grants": "https://zenodo.org/api/records/23611588/access/grants",
+    "access_users": "https://zenodo.org/api/records/23611588/access/users",
+    "access_request": "https://zenodo.org/api/records/23611588/access/request",
+    "access": "https://zenodo.org/api/records/23611588/access",
+    "communities": "https://zenodo.org/api/records/23611588/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/23611588/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/23611588/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/23611588/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/23611588/quota-increase",
+    "requests": "https://zenodo.org/api/records/23611588/requests"
+  },
+  "updated": "2026-10-24T07:54:56.134772+00:00",
+  "recid": "23611588",
+  "revision": 4,
+  "files": [
+    {
+      "id": "5e374d4a-ffb4-4ca5-b9d5-7b2efb76f215",
+      "key": "Paper_4_PRD.pdf",
+      "size": 885209,
+      "checksum": "md5:54bc2f332ca25c2690374a2e7ae10938",
+      "links": {
+        "self": "https://zenodo.org/api/records/23611588/files/Paper_4_PRD.pdf/content"
+      }
+    },
+    {
+      "id": "ccccc0bc-9401-4543-a826-ebe87f5dacb1",
+      "key": "Paper_4_Annals_of_Physics.pdf",
+      "size": 845605,
+      "checksum": "md5:e7f229ab0a31abd4d57fa557db1273b5",
+      "links": {
+        "self": "https://zenodo.org/api/records/23611588/files/Paper_4_Annals_of_Physics.pdf/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "92077"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 5,
+    "unique_downloads": 5,
+    "views": 9,
+    "unique_views": 9,
+    "version_downloads": 0,
+    "version_unique_downloads": 0,
+    "version_unique_views": 0,
+    "version_views": 0
+  },
+  "state": "done",
+  "submitted": true
+}

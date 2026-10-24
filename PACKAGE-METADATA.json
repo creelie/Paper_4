@@ -1,0 +1,24 @@
+{
+  "version": "1.1.0",
+  "doi": "10.5281/zenodo.23611588",
+  "authors": [
+    "Deep Bhattacharjee"
+  ],
+  "repository": "https://github.com/creelie/Paper_4",
+  "primary_journal": "Physical Review D",
+  "alternative_journal": "Annals of Physics",
+  "journal_targets": [
+    "Physical Review D",
+    "Annals of Physics"
+  ],
+  "zenodo_record": "https://zenodo.org/records/23611588",
+  "zenodo_record_state": "done",
+  "zenodo_publication_confirmed_before_packaging": true,
+  "archived_pdf_checksum_matches": true,
+  "created_at_utc": "2026-10-24T07:59:07.773205+00:00",
+  "arxiv_identifier": null,
+  "arxiv_required_for_selected_direct_routes": false,
+  "journal_submitted": false,
+  "journal_accepted": false,
+  "proof_scope": "Necessary obstructions under N1\u2013N5; separate unitary helicity bound; no general existence or nonperturbative quantum construction claimed."
+}
