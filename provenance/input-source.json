@@ -1,0 +1,120 @@
+{
+  "repository": "https://github.com/creelie/cs-grav",
+  "commit": "3b9a3767aa637295f79d6f2d21db2b2d4f5b3576",
+  "preprint": "https://hexagonmath.org/2610.00471v1",
+  "reviewed_package": "D:\\CLAUDE PAPERS\\final-journal-sequence-2026-10-24\\02-SYM-null-projection\\submission-package",
+  "source_files": [
+    {
+      "path": "COVER-LETTER-JHEP.md",
+      "sha256": "3690417addea5a608046b75501843f104113ecf406a9beff191a3e0a84ebc826"
+    },
+    {
+      "path": "manuscript/abstract.tex",
+      "sha256": "af58d16d4dc4946466a7b953fd5b322162e903a51c2c9892f3d7d71896e9849a"
+    },
+    {
+      "path": "manuscript/bib.tex",
+      "sha256": "7bd645080e1e7ca96402e643e28c49a054698cb6a000d64e0938dd99a3244307"
+    },
+    {
+      "path": "manuscript/body.tex",
+      "sha256": "7dea2b41c64fd75021b7bee6ee2f19024c6610487e1c30ce9d229699eb8607dc"
+    },
+    {
+      "path": "manuscript/figures/fig_lightcone.pdf",
+      "sha256": "f1d6e2be2d8f438ca2c7601f682f63fa6a41bfe6dba6cea3dade9e9905683aa9"
+    },
+    {
+      "path": "manuscript/figures/fig_lightcone.png",
+      "sha256": "5c043085fd80f86bcdea44935a9d415073e471b758b4b602a973d6c84dc35bf6"
+    },
+    {
+      "path": "manuscript/figures/fig_multiplets.pdf",
+      "sha256": "d8767a1421800552e8e5ca8510b458aed1f592028df8312bf00ee514e8b27b3c"
+    },
+    {
+      "path": "manuscript/figures/fig_multiplets.png",
+      "sha256": "45bca570ee9e37c725dc863eb136d6fc0ff71562453fafc9a227c2d748aa8064"
+    },
+    {
+      "path": "manuscript/figures/fig_residuals.pdf",
+      "sha256": "e0f4d16e4de42e610fed46c7f4c1201629d5003831547686e9b90479a9cd65e3"
+    },
+    {
+      "path": "manuscript/figures/fig_residuals.png",
+      "sha256": "56aec33e25483f28edd66019a1698a5062769fe9de4ee193baae1f0fcadf4676"
+    },
+    {
+      "path": "manuscript/figures/fig_signatures.pdf",
+      "sha256": "471498bd8ee8105d82c0177f96c0caa85f56a6f5ab120802ed18fc028ccdb074"
+    },
+    {
+      "path": "manuscript/figures/fig_signatures.png",
+      "sha256": "06a89330f01901935cbc801ddff390e11f3a9585f9f7b3bcfbd805f2d40b8281"
+    },
+    {
+      "path": "manuscript/figures/fig_spinorcount.pdf",
+      "sha256": "2ac70147716dcfcb5f32afb3bc0189c50b718b8f13b357368ea8aeb6ba6670a0"
+    },
+    {
+      "path": "manuscript/figures/fig_spinorcount.png",
+      "sha256": "fd2460ca4b7c121c97ec6abcdcf7729aec2209415dd53954c537233388c1d391"
+    },
+    {
+      "path": "manuscript/hexagon.tex",
+      "sha256": "780bea7ec864d41c9a940d135dfbca0b4d30c509303943d1b41768370e53c2d3"
+    },
+    {
+      "path": "manuscript/jheppub.sty",
+      "sha256": "c59553e67370517a86c16dfcc52c2410f51525971696c3cd83ffba6340a8cc13"
+    },
+    {
+      "path": "manuscript/main.tex",
+      "sha256": "98ed8fb088780515822d564fefe472025ea24806a2320ba860ea8f0a710851f8"
+    },
+    {
+      "path": "manuscript/preamble.tex",
+      "sha256": "0edf7021f82b809cb400982d4cc250f065b8c8a7c07bcf399f40b77d5d5dbefd"
+    },
+    {
+      "path": "PROOF-AUDIT.md",
+      "sha256": "7dd55d7ada393fe11d29cac98647444d7306de50ff6d402603c1a966593eed6c"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ed97a948208a5205cbf8a3a3a15da976344a411d6d64c2db8be3abd7fc0970ee"
+    },
+    {
+      "path": "REVISION-NOTES.md",
+      "sha256": "553ca3bed6d461461133992d2fd685f9f66ced6943489f98e2cb2a6188c06afc"
+    },
+    {
+      "path": "SUBMISSION-NOTES.md",
+      "sha256": "f6bd78f77295bc58deddec937e1c95a2a347b65d4f5818d23a7da8a6b64175b7"
+    },
+    {
+      "path": "verification/code/clifford.py",
+      "sha256": "0d77890f3cd002bf852b1931299dff8388a89db01e550ad58a5cd5e41bbefd1a"
+    },
+    {
+      "path": "verification/code/LICENSE",
+      "sha256": "35ae09fe5b4f89e492befa7191139203f65096b693bc3f66a7a1ba8a43defa05"
+    },
+    {
+      "path": "verification/code/requirements.txt",
+      "sha256": "0b1e6fdf6e5334e196340d5c12e37e22b44cdac267260b41f023233491e32c96"
+    },
+    {
+      "path": "verification/code/verify.py",
+      "sha256": "0ad8961ca258d775b100b30b116d36555284282f738270d3a8aa04ce997ed8e8"
+    },
+    {
+      "path": "verification/environment.json",
+      "sha256": "7fb7f7d852fa639d91eb303550ed8af4590214b08f136937cf7f65c4194e56c7"
+    },
+    {
+      "path": "verification/page-audit.json",
+      "sha256": "29e7e8c3901e09fbc5616f40412a99fe47ca5739fde103c60244bb8c8eae27d2"
+    }
+  ]
+}

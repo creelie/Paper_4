@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Cite the manuscript DOI and this versioned verification archive."
+type: software
+title: "Verification files for residual-dimension obstructions in null-projected SYM"
+version: "1.1.0"
+date-released: "2026-10-24"
+license: MIT
+repository-code: "https://github.com/creelie/Paper_4"
+authors:
+  - family-names: Bhattacharjee
+    given-names: Deep
+    orcid: "https://orcid.org/0000-0003-0466-750X"
+preferred-citation:
+  type: unpublished
+  title: "Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories"
+  authors:
+    - family-names: Bhattacharjee
+      given-names: Deep
+      orcid: "https://orcid.org/0000-0003-0466-750X"
+  year: 2026
+  doi: "10.5281/zenodo.23611588"
+  url: "https://doi.org/10.5281/zenodo.23611588"
+  version: "1.1.0"

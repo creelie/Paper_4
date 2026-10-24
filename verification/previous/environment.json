@@ -1,0 +1,8 @@
+{
+  "python": "3.14.3",
+  "numpy": "2.4.3",
+  "scipy": "1.17.1",
+  "source_commit": "3b9a3767aa637295f79d6f2d21db2b2d4f5b3576",
+  "run_date": "2026-10-24",
+  "full_engine_tests_interpreter": "Python 3.12"
+}

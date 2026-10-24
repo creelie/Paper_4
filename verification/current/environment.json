@@ -1,0 +1,13 @@
+{
+  "python": "3.14.3",
+  "numpy": "2.4.3",
+  "scipy": "1.17.1",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "checks_passed": 34,
+  "checks_failed": 0,
+  "general_proof_formalized": false,
+  "sources": {
+    "verify.py": "0ad8961ca258d775b100b30b116d36555284282f738270d3a8aa04ce997ed8e8",
+    "clifford.py": "0d77890f3cd002bf852b1931299dff8388a89db01e550ad58a5cd5e41bbefd1a"
+  }
+}

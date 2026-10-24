@@ -1,0 +1,27 @@
+--- original/code/figures/make_figures.py
++++ Paper_4/verification/code/figures/make_figures.py
+@@ -1,5 +1,10 @@
+-"""Figures of the paper.  Run from this directory: python3 make_figures.py
+-Writes PDF and PNG files into ../../paper/tex/figures/."""
++"""Redraw the archived plot data; optional --output-dir selects the destination.
++
++The original plot construction/data are retained. Only the package's output
++path and optional CLI destination differ from the original source layout.
++"""
++import argparse
++from pathlib import Path
+ import os
+ import numpy as np
+ import matplotlib
+@@ -7,7 +12,10 @@
+ import matplotlib.pyplot as plt
+ from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+ 
+-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "paper", "tex", "figures")
++parser = argparse.ArgumentParser()
++parser.add_argument('--output-dir', type=Path,
++                    default=Path(__file__).resolve().parents[3]/'manuscript'/'figures')
++OUT = str(parser.parse_args().output_dir)
+ os.makedirs(OUT, exist_ok=True)
+ plt.rcParams.update({"font.family": "serif", "font.size": 10, "mathtext.fontset": "cm"})
+ BLUE, RED, GREY, GREEN = "#2b5d9b", "#b8312f", "#7f7f7f", "#2e8b57"

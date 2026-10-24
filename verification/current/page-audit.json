@@ -1,0 +1,30 @@
+{
+  "pages": 27,
+  "authors": [
+    "Deep Bhattacharjee"
+  ],
+  "doi_present": "10.5281/zenodo.23611588",
+  "pdf_sha256": "e3e4fddcccee802e6e1a2f40af2b0d4432cd6462aae5edffa152c576f2b01ffb",
+  "pdf_md5": "ec107ec23a50d63fe8a108d6e15e43c2",
+  "off_page_words": [],
+  "all_fonts_embedded": true,
+  "all_pages_rendered": true,
+  "visual_review_completed": true,
+  "tex_overfull_or_unresolved_diagnostics": false,
+  "all_pages_visually_inspected": true,
+  "contact_sheets_inspected": [
+    "pages 1-9",
+    "pages 10-18",
+    "pages 19-27"
+  ],
+  "additional_full_page_inspection": [
+    1,
+    6,
+    13,
+    19,
+    24,
+    27
+  ],
+  "layout_defects_found": false,
+  "review": "Every rendered page inspected; title/abstract, logical diagram, oscillator diagram, dense proof, tables and final references checked separately."
+}

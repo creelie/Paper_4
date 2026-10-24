@@ -1,0 +1,20 @@
+{
+  "title": "Verification files for residual-dimension obstructions in null-projected SYM",
+  "upload_type": "software",
+  "version": "1.1.0",
+  "description": "Editable manuscript, complete written arguments, supplementary gamma-matrix checks, numerical logs and audit records. The manuscript DOI is 10.5281/zenodo.23611588. The theorem gives necessary conditions under N1\u2013N5; no universal existence or nonperturbative quantum construction is claimed.",
+  "creators": [
+    {
+      "name": "Bhattacharjee, Deep",
+      "orcid": "0000-0003-0466-750X"
+    }
+  ],
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23611588",
+      "scheme": "doi",
+      "relation": "isSupplementTo"
+    }
+  ]
+}
