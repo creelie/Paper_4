@@ -1,7 +1,7 @@
 # Verification and limits
 
 The general deductions are proved in the manuscript. The original programs
-`verification/code/verify.py` and `clifford.py` were retained unchanged and run
+`verification/code/verify.py` and `clifford.py` were retained unchanged apart from line-ending normalization and run
 through `scripts/verify.py` for this package. All 34 checks must pass for a
 successful run; the exact output, versions and source hashes are recorded in
 `verification/current/` and the same command runs in GitHub CI.
@@ -24,3 +24,11 @@ No Lean formalization of the general field-theoretic theorem is claimed.
 Historical engine tests and the preceding package's page audit are explicitly
 separated in `verification/previous/`. Current PDF page rendering and diagnostics
 are recorded separately. Cite the exact release rather than an evolving branch.
+
+The two current layouts preserve the mathematical body. The 34-pass run was
+performed earlier on 24 October 2026 against the same numerical source; it is
+retained rather than presented as a new run after formatting. Source hashes use
+CRLF-to-LF normalization so that Windows and Git release bytes agree. Current
+PDF inspections cover both journal layouts. Figure regeneration defaults to
+verification/generated-figures and does not overwrite either layout's figures
+unless an explicit --output-dir selects that directory.

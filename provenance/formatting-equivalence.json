@@ -1,0 +1,19 @@
+{
+  "reference": "Audited Paper_4 JHEP staging, before journal retargeting",
+  "reference_body_sha256": "7ddc56eb4bda562961ba40351013fb387237c7c08875a32de828bb9dea51ddfa",
+  "changes": "AI declaration moved before references; Annals appendix numbering and plot scales adjusted for legibility. All mathematical prose, equations, results and plot data preserved.",
+  "variants": {
+    "PRD": {
+      "mathematical_body_unchanged": true,
+      "body_sha256": "1dd75e55f535996ca1e834a7f7e319ab3bc80f075f64a560071d5b72cfe8d38a",
+      "figure_files": 5,
+      "sole_author": "Deep Bhattacharjee"
+    },
+    "Annals-of-Physics": {
+      "mathematical_body_unchanged": true,
+      "body_sha256": "b086f6828c31a0d5fd84e5462f7bfe713cfeb0dda8c399b90bb45e9f49a63830",
+      "figure_files": 5,
+      "sole_author": "Deep Bhattacharjee"
+    }
+  }
+}

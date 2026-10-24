@@ -34,7 +34,7 @@ All 34 numerical checks in the original verification program passed in a fresh r
 
 The Anaxia regression suite passed 320 tests with one skip, including the new helicity and scope checks. No full Lean formalisation of this field-theoretic theorem has been supplied. The engine's formal and human-review gates remain zero, and necessary-condition tests are not presented as existence certificates.
 
-The PDF was rebuilt in JHEP style. All 27 current pages were rendered and visually inspected; the coordinate audit found no off-page words. The build has no overfull boxes or unresolved references. Formatting and computation do not certify journal acceptance.
+The preceding JHEP staging PDF had 27 pages and passed its layout check. The current direct-submission variants are separately built and inspected; their exact page counts and checksums are recorded in verification/current/page-audit.json. Formatting and computation do not certify journal acceptance.
 
 ## Paper_4 packaging update
 
@@ -52,3 +52,13 @@ The previously recorded 320-pass/one-skip Anaxia run is retained as historical
 engine provenance; it was not rerun as a Paper_4 proof check and is not an
 independent mathematical certificate. The final page count and current PDF QA
 are recorded in `verification/current/page-audit.json`.
+
+## Direct-submission retargeting
+
+Physical Review D and Annals of Physics replace JHEP as alternative targets.
+The proof text, byline and archived plot data are preserved. The AI declaration
+is moved before the references and Annals appendix figure/table numbers follow
+that guide. `provenance/formatting-equivalence.json` records the comparison.
+The same-day 34-check run is retained because the numerical programs and the
+mathematical statements have not changed. New PDF QA is recorded per layout.
+arXiv is not a prerequisite of the selected direct-upload routes.

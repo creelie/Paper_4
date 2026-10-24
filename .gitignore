@@ -6,6 +6,6 @@
 *.fdb_latexmk
 *.pyc
 __pycache__/
-manuscript/main.pdf
+**/main.pdf
 *.zip
 *.zip.sha256

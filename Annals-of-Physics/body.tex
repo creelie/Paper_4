@@ -31,7 +31,7 @@ The paper is organized as follows. Section~\ref{sec:spinors} collects what we ne
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.78\textwidth]{figures/fig_signatures.pdf}
+\includegraphics[width=0.92\textwidth]{figures/fig_signatures.pdf}
 \caption{Signatures $(s,t)$ and numbers $k$ of null vectors. Blue points: Nishino's signatures $(9+m)+(1+m)$ with $k=m$, on the plane $s+t-2k=10$ (blue). Red segments: the signatures $(9+8n+q)+(1+q)$ of the families~\eqref{eq:families} for $n=1,2$ and $q=0,1,2,3$, with every $k\le t$; the star marks $27+3$. The grey surface is the wall $k=t$, beyond which real null frames do not exist. No red point reaches the blue plane.}
 \label{fig:signatures}
 \end{figure}
@@ -147,7 +147,7 @@ Figure~\ref{fig:lightcone} illustrates the lemma in $\bR^{2,1}$, where $\min(s,t
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.56\textwidth]{figures/fig_lightcone.pdf}
+\includegraphics[width=0.80\textwidth]{figures/fig_lightcone.pdf}
 \caption{The light cone of $\bR^{2,1}$. Two independent real null vectors $n=(\cos\theta,\sin\theta,1)$ and $n'=(\cos\theta',\sin\theta',1)$ satisfy $n\cdot n'=\cos(\theta-\theta')-1<0$, so the plane they span (grey) is not isotropic. In $\bR^{s,t}$ the largest isotropic subspaces have dimension $\min(s,t)$ (Lemma~\ref{lem:witt}).}
 \label{fig:lightcone}
 \end{figure}
@@ -223,7 +223,7 @@ The four solutions are the Majorana spinors of three and four dimensions, the We
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.64\textwidth]{figures/fig_spinorcount.pdf}
+\includegraphics[width=0.88\textwidth]{figures/fig_spinorcount.pdf}
 \caption{The spinor dimension $N=2(d-2)$ forced by the cubic identity (blue) against the smallest dimension $2^{\lceil d/2\rceil-1}$ that a vector structure can have (red). A solution requires the blue value to be a multiple of the red one. This happens for $d=3,4,6,10$ (circles) and never again, because the red curve grows exponentially.}
 \label{fig:spinorcount}
 \end{figure}
@@ -524,7 +524,7 @@ Figure~\ref{fig:residuals} summarizes the numerical test of Step~1 in explicit g
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.66\textwidth]{figures/fig_residuals.pdf}
+\includegraphics[width=0.90\textwidth]{figures/fig_residuals.pdf}
 \caption{Relative residual of the least-squares solution of the absorption equation~\eqref{eq:proj1} for real frames, plotted as $16+\log_{10}(\text{residual})$ against $s$ and $k$. Blue: $(9,1)$, $(10,2)$, $(11,3)$, $(12,4)$, $(13,5)$ with $k=t-1$, and $(6,6)$, $(7,7)$ with $k=1,2$, all with $D'=10$; the residuals are below $3\times10^{-15}$. Red: $(17,1)$, $(18,2)$, $(19,3)$, $(20,4)$ with every tested $k$, $D'\in\{16,18,20,22\}$; the residuals lie between $0.97$ and $1$, so no solution is found in these samples; the exact exclusion follows from the analytic theorem.}
 \label{fig:residuals}
 \end{figure}
@@ -575,7 +575,7 @@ For $n\ge1$, $S=2^{4+4n}>16$, so a massless multiplet in this unitary, tensor-ch
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.66\textwidth]{figures/fig_multiplets.pdf}
+\includegraphics[width=0.90\textwidth]{figures/fig_multiplets.pdf}
 \caption{Massless multiplets in $(9+8n)+1$, plotted as $\log_2\log_2$ of the number of states. Blue: a vector field and a Majorana--Weyl gaugino, $(8+8n)+2^{3+4n}$ states. Red: the least number $2^{2^{2+4n}}$ of states of a massless multiplet without tensor charges (Theorem~\ref{thm:singletime}). The two agree only for $D=10$.}
 \label{fig:multiplets}
 \end{figure}
@@ -598,10 +598,6 @@ Supersymmetric Yang--Mills theories built with null projections in signatures wi
 
 The general results are proved in the text; numerical samples are supplementary. The plotted and tabulated residuals retain the archived reference run. A fresh run of all 34 checks on 24 October 2026 also passed; its output and library versions are included in the submission supplement. This manuscript revision is archived at~\cite{Paper4Revision}. Its complete \LaTeX{} source, numerical programs and verification logs are available in the versioned repository~\cite{Paper4Release}; the earlier source and reference data are archived at~\cite{BhattacharjeeArchive2026}. The schematics of Figs.~\ref{fig:proofmap} and~\ref{fig:cube} are drawn in the \LaTeX{} source with TikZ.
 
-\section*{Use of AI tools}
-
-Claude Code (Anthropic) assisted the original preparation. OpenAI Codex assisted this revision with proof auditing, the explicit helicity-span argument, the null-current lemma, scope corrections and editing. The numerical programs are supplementary checks; they do not certify the general field-theoretic statements. Responsibility for reviewing and approving the final mathematical content rests with the author.
-
 \section*{Funding}
 
 The author received no funding for this work.
@@ -611,6 +607,11 @@ The author received no funding for this work.
 The author declares no competing interests.
 
 \appendix
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
+\renewcommand{\thetable}{\Alph{section}.\arabic{table}}
+\renewcommand{\theequation}{\Alph{section}.\arabic{equation}}
 
 \section{The oscillator decomposition}
 \label{app:fock}

@@ -1,0 +1,23 @@
+{
+  "checked_date": "2026-10-24",
+  "arxiv_identifier": null,
+  "primary_journal": {
+    "name": "Physical Review D",
+    "source": "https://journals.aps.org/authors/web-submission-guidelines-physical-review",
+    "arxiv_required_for_direct_upload": false,
+    "initial_file": "combined manuscript PDF",
+    "route": "https://authors.aps.org/Submissions/"
+  },
+  "alternative_journal": {
+    "name": "Annals of Physics",
+    "source": "https://www.sciencedirect.com/journal/annals-of-physics/publish/guide-for-authors",
+    "source_access": "official page read in browser",
+    "arxiv_prerequisite_in_guide": false,
+    "files": "editable TeX sources plus review PDF",
+    "abstract_word_limit": 250,
+    "highlight_count": "3\u20135, encouraged",
+    "highlight_character_limit": 85,
+    "route": "https://submit.elsevier.com/AOP"
+  },
+  "journal_submission_performed": false
+}

@@ -1,30 +1,65 @@
 {
-  "pages": 27,
-  "authors": [
-    "Deep Bhattacharjee"
+  "doi": "10.5281/zenodo.23611588",
+  "arxiv_identifier": null,
+  "arxiv_required_for_selected_routes": false,
+  "abstract_words": 176,
+  "formats": [
+    {
+      "file": "Paper_4_PRD.pdf",
+      "pages": 19,
+      "authors": [
+        "Deep Bhattacharjee"
+      ],
+      "pdf_md5": "54bc2f332ca25c2690374a2e7ae10938",
+      "pdf_sha256": "a8195d524e5440025794075412aa3bab3cc92587c03c5e606d60669448688766",
+      "off_page_words": [],
+      "all_fonts_embedded": true,
+      "all_pages_rendered": true,
+      "visual_review_completed": true,
+      "all_pages_visually_inspected": true,
+      "visual_review_performed_by": "OpenAI Codex",
+      "layout_defects_found": false
+    },
+    {
+      "file": "Paper_4_Annals_of_Physics.pdf",
+      "pages": 33,
+      "authors": [
+        "Deep Bhattacharjee"
+      ],
+      "pdf_md5": "e7f229ab0a31abd4d57fa557db1273b5",
+      "pdf_sha256": "e6a4979e1adc095ba093b06866f33ba8dfa5300083e9d22ebdbca62fd916d19c",
+      "off_page_words": [],
+      "all_fonts_embedded": true,
+      "all_pages_rendered": true,
+      "visual_review_completed": true,
+      "all_pages_visually_inspected": true,
+      "visual_review_performed_by": "OpenAI Codex",
+      "layout_defects_found": false
+    }
   ],
-  "doi_present": "10.5281/zenodo.23611588",
-  "pdf_sha256": "e3e4fddcccee802e6e1a2f40af2b0d4432cd6462aae5edffa152c576f2b01ffb",
-  "pdf_md5": "ec107ec23a50d63fe8a108d6e15e43c2",
-  "off_page_words": [],
-  "all_fonts_embedded": true,
-  "all_pages_rendered": true,
   "visual_review_completed": true,
-  "tex_overfull_or_unresolved_diagnostics": false,
   "all_pages_visually_inspected": true,
-  "contact_sheets_inspected": [
-    "pages 1-9",
-    "pages 10-18",
-    "pages 19-27"
-  ],
-  "additional_full_page_inspection": [
-    1,
-    6,
-    13,
-    19,
-    24,
-    27
-  ],
-  "layout_defects_found": false,
-  "review": "Every rendered page inspected; title/abstract, logical diagram, oscillator diagram, dense proof, tables and final references checked separately."
+  "critical_full_page_inspections": {
+    "PRD": [
+      1,
+      4,
+      17
+    ],
+    "Annals of Physics": [
+      1,
+      2,
+      6,
+      27,
+      28,
+      29
+    ]
+  },
+  "final_annals_caption_correction": {
+    "pages_rechecked": [
+      27,
+      28,
+      29
+    ],
+    "remaining_pages": "PNG hashes unchanged from the preceding complete visual inspection"
+  }
 }

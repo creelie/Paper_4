@@ -3,16 +3,20 @@ from pathlib import Path
 import datetime,hashlib,json,zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
-NAME='Paper_4_JHEP_submission_v1.1.0.zip'
+NAME='Paper_4_direct_submission_v1.1.0.zip'
 record=json.loads((ROOT/'provenance/zenodo-published-record.json').read_text(encoding='utf-8'))
 assert record['state']=='done' and record['doi']=='10.5281/zenodo.23611588'
 assert record['metadata']['version']=='1.1.0'
 assert [x['name'] for x in record['metadata']['creators']]==['Bhattacharjee, Deep']
-pdf=ROOT/'Paper_4_JHEP.pdf'
-entry=next(f for f in record['files'] if f['key']==pdf.name)
-assert entry['checksum']=='md5:'+hashlib.md5(pdf.read_bytes()).hexdigest()
 qa=json.loads((ROOT/'verification/current/page-audit.json').read_text(encoding='utf-8'))
-assert qa['visual_review_completed'] and qa['pdf_md5']==hashlib.md5(pdf.read_bytes()).hexdigest()
+assert qa['visual_review_completed']
+for name in ['Paper_4_PRD.pdf','Paper_4_Annals_of_Physics.pdf']:
+ pdf=ROOT/name
+ entry=next(f for f in record['files'] if f['key']==name)
+ digest=hashlib.md5(pdf.read_bytes()).hexdigest()
+ assert entry['checksum']=='md5:'+digest
+ audit=next(item for item in qa['formats'] if item['file']==name)
+ assert audit['visual_review_completed'] and audit['pdf_md5']==digest
 skip_suffix={'.aux','.log','.out','.blg','.rpi','.fls','.fdb_latexmk','.toc','.pyc','.exe'}
 def include(path):
  rel=path.relative_to(ROOT)
@@ -25,11 +29,12 @@ for p in ROOT.rglob('*'):
   data=p.read_bytes()
   if b'\r\n' in data:p.write_bytes(data.replace(b'\r\r\n',b'\n').replace(b'\r\n',b'\n'))
 metadata={'version':'1.1.0','doi':record['doi'],'authors':['Deep Bhattacharjee'],
- 'repository':'https://github.com/creelie/Paper_4','journal_target':'Journal of High Energy Physics',
+ 'repository':'https://github.com/creelie/Paper_4','primary_journal':'Physical Review D',
+ 'alternative_journal':'Annals of Physics','journal_targets':['Physical Review D','Annals of Physics'],
  'zenodo_record':'https://zenodo.org/records/23611588','zenodo_record_state':record['state'],
  'zenodo_publication_confirmed_before_packaging':True,'archived_pdf_checksum_matches':True,
  'created_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
- 'arxiv_identifier':None,'arxiv_status':'pending as instructed by the author',
+ 'arxiv_identifier':None,'arxiv_required_for_selected_direct_routes':False,
  'journal_submitted':False,'journal_accepted':False,
  'proof_scope':'Necessary obstructions under N1–N5; separate unitary helicity bound; no general existence or nonperturbative quantum construction claimed.'}
 (ROOT/'PACKAGE-METADATA.json').write_text(json.dumps(metadata,indent=2)+'\n',encoding='utf-8',newline='\n')

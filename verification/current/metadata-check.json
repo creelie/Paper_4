@@ -5,7 +5,24 @@
   "authors": [
     "Deep Bhattacharjee"
   ],
-  "arxiv": "pending",
   "manuscript_doi": "10.5281/zenodo.23611588",
-  "zip_created": false
+  "zip_created": false,
+  "arxiv_identifier": null,
+  "arxiv_required_for_selected_routes": false,
+  "targets": [
+    "Physical Review D",
+    "Annals of Physics"
+  ],
+  "source_line_endings": "LF",
+  "original_check_programs_unchanged_apart_from_line_endings": true,
+  "formats": [
+    {
+      "name": "Paper_4_PRD.pdf",
+      "pages": 19
+    },
+    {
+      "name": "Paper_4_Annals_of_Physics.pdf",
+      "pages": 33
+    }
+  ]
 }

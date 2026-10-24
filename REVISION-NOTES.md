@@ -27,3 +27,11 @@
 - Kept arXiv identification pending as instructed by the author. The package
   does not perform a journal submission or claim sufficiency/existence beyond
   the necessary obstructions that are proved in the manuscript.
+
+## Direct-submission layouts
+
+Replaced the unsubmitted JHEP layout with REVTeX 4.2 for Physical Review D and
+elsarticle for Annals of Physics. Added separate cover letters and Annals
+highlights. Kept the exact mathematical content, moved the existing AI disclosure
+before the references, and adjusted Annals appendix numbering. Neither selected
+direct-upload route requires arXiv; no journal submission has been made.

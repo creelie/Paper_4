@@ -7,7 +7,8 @@
   "checks_failed": 0,
   "general_proof_formalized": false,
   "sources": {
-    "verify.py": "0ad8961ca258d775b100b30b116d36555284282f738270d3a8aa04ce997ed8e8",
-    "clifford.py": "0d77890f3cd002bf852b1931299dff8388a89db01e550ad58a5cd5e41bbefd1a"
-  }
+    "verify.py": "3a5487aad70ca2a4586b4cc2854e165e9d74a82263bc86588da2c1c1aa36b140",
+    "clifford.py": "fb7bbcb21882c22f60db2acace94388465645717d8b8b9c6f7452db3d17cd7f0"
+  },
+  "source_hash_policy": "SHA-256 after CRLF-to-LF normalization"
 }

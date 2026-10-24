@@ -1,53 +1,77 @@
-# Paper_4 submission notes — 24 October 2026
+# Direct-submission notes — 24 October 2026
 
-Target: **Journal of High Energy Physics**. The paper concerns algebraic
-obstructions to an explicit higher-dimensional supersymmetric gauge-theory
-construction. The journal assesses its originality, interest and correctness.
-
-Sole author: Deep Bhattacharjee. Corresponding email: itsdeep@live.com.
-ORCID: https://orcid.org/0000-0003-0466-750X . Existing byline preserved.
-
-Current manuscript DOI: https://doi.org/10.5281/zenodo.23611588 .
-Previous preprint to disclose: https://hexagonmath.org/2610.00471v1 .
-Previous research archive: https://doi.org/10.5281/zenodo.23601918 .
-Original source: https://github.com/creelie/cs-grav , commit
+Author: Deep Bhattacharjee. Email: itsdeep@live.com.
+ORCID: https://orcid.org/0000-0003-0466-750X . Sole byline retained.
+Manuscript DOI: https://doi.org/10.5281/zenodo.23611588 . Version 1.1.0.
+Preceding preprint: https://hexagonmath.org/2610.00471v1 .
+Earlier research archive: https://doi.org/10.5281/zenodo.23601918 .
+Original source repository: https://github.com/creelie/cs-grav , commit
 3b9a3767aa637295f79d6f2d21db2b2d4f5b3576.
-Revised source and verification release: https://github.com/creelie/Paper_4/tree/v1.1.0 .
+Current source release: https://github.com/creelie/Paper_4/tree/v1.1.0 .
 
-## Portal requirements still supplied by the author
+The author has no arXiv identifier for this paper. It is not a prerequisite
+of the direct-upload routes below. The reference list's arXiv links identify
+other cited papers; they must not be entered as this manuscript's identifier.
+JHEP was removed as a target because its standard process requires arXiv.
 
-The official guide explicitly requires an arXiv identifier and that the submitted
-version match the arXiv version. No identifier for this manuscript has been
-supplied or found in the inspected source. **Do not enter another paper's arXiv
-identifier or treat the Hexagon identifier as one.** The manuscript/source
-package is prepared; the arXiv step remains required before JHEP submission.
-The author also supplies exclusivity, originality, affiliation and declaration
-confirmations. The source's existing funding and competing-interest statements
-are retained for the author's review; no new personal declaration is invented.
+## Physical Review D — first target
 
-Official guide checked 24 October 2026:
-https://jhep.sissa.it/jhep/help/JHEP/JHEP_author.jsp .
-Keyword list: https://jhep.sissa.it/jhep/help/keywordsList.jsp .
+Prepare a **Regular Article** submission, subject to editorial classification.
+The general structural theorem extends beyond commentary on one published
+proposal; the full proofs warrant the regular-article format. Do not label it
+a Letter. The editor determines scope, novelty and suitability.
 
-The manuscript uses jheppub, a formula-free title/abstract, the journal's subject
-keywords, numbered references ordered by first citation, vector figures and an
-AI-use disclosure. Master: `manuscript/main.tex`.
+Portal: https://authors.aps.org/Submissions/ .
+The current APS web guide treats an arXiv number as optional and accepts a
+combined manuscript PDF for a new submission. Upload `Paper_4_PRD.pdf`, use
+`COVER-LETTER-PRD.md` for the letter, and cite the Zenodo/source release for the
+supplementary numerical files. `PRD/main.tex` and its source directory are
+provided for source requests and revisions. No arXiv upload is needed.
 
-## The single ZIP and journal upload
+Guide checked 24 October 2026:
+https://journals.aps.org/authors/web-submission-guidelines-physical-review .
+Journal author guide: https://journals.aps.org/prd/authors .
+Suggested subject phrases for matching in the live PhySH selector:
+supersymmetry, Yang–Mills theory, spacetime symmetries, Clifford algebras.
+These are search phrases, not invented controlled-vocabulary identifiers.
 
-The outer ZIP is the complete author packet. It contains correspondence,
-verification and provenance as well as manuscript sources, so it should not be
-uploaded unchanged as JHEP's TeX compilation archive. For a journal source upload,
-select only the contents of `manuscript/`, keep `main.tex` at the archive root,
-and identify it as master. Do not include the cover letter or verification code
-in that compilation archive. This author packet intentionally contains only one
-final ZIP and does not create nested ZIPs.
+## Annals of Physics — alternative
 
-The PDF's DOI refers to the archived manuscript. Source files and code are
-provided in the GitHub release; earlier original sources remain available in
-their preceding Zenodo archives. No full Lean formalization is supplied.
+Portal: https://submit.elsevier.com/AOP .
+Provide `Paper_4_Annals_of_Physics.pdf` together with the editable files from
+`Annals-of-Physics/`, identifying `main.tex` as master. The guide requires
+editable source files; a PDF is not a substitute for TeX source. If the portal
+asks for one source archive, archive only that directory's contents with the
+master at its root. The complete author-packet ZIP is not a compilation archive:
+it also contains correspondence, provenance and a second journal layout.
 
-The original N1–N5 theorem, single-time theorem and current numerical checks have
-different hypotheses and roles. Preserve those distinctions in the portal's
-summary and any subsequent preprint update. A source archive, DOI and passing
-program cannot certify editorial acceptance. No submission has been performed.
+Use `COVER-LETTER-ANNALS-OF-PHYSICS.md` and, if requested, the separate editable
+`ANNALS-OF-PHYSICS-highlights.txt` (four bullets, each at most 85 characters).
+The abstract is below the guide's 250-word limit. Five keywords, numbered
+references, editable equations/tables and appendix numbering are supplied.
+
+The official guide was read in the browser on 24 October 2026; its online
+submission instructions do not impose an arXiv prerequisite:
+https://www.sciencedirect.com/journal/annals-of-physics/publish/guide-for-authors .
+It expressly permits preprints; disclose Hexagon and the manuscript DOI.
+The author completes the publisher's competing-interest declaration tool,
+confirms funding/affiliation information and provides any contribution-role
+entries requested by the portal. Existing statements are retained for review;
+no new personal declaration or financial agreement is made by this package.
+
+## Shared scope, declarations and archive
+
+Submit to only one journal at a time. The author must confirm originality,
+current exclusive-submission status, permissions and final approval at the
+actual submission. No such confirmation is fabricated in the cover letters.
+Both versions disclose substantive AI assistance and the author's responsibility
+for verifying the mathematics and citations. The author reviews and approves
+that content before submission; the disclosure must not be reduced to language
+polishing when AI also assisted proof development/auditing.
+
+The mathematical body and archived plot data are preserved across layouts.
+Only class/front matter, declaration placement and Annals appendix numbering
+differ. No outstanding physical existence gap is relabelled as solved.
+The DOI archives the two manuscript layouts. Code and editable source are
+provided through the versioned repository/release. No journal manuscript has
+been submitted, accepted or assigned a publisher DOI.

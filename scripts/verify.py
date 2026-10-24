@@ -14,6 +14,7 @@ assert result.returncode==0 and '34 checks passed, 0 failed' in text,text[-3000:
 record={'python':platform.python_version(),'numpy':numpy.__version__,
     'scipy':scipy.__version__,'platform':platform.platform(),'checks_passed':34,
     'checks_failed':0,'general_proof_formalized':False,
-    'sources':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [code/'verify.py',code/'clifford.py']}}
+    'source_hash_policy':'SHA-256 after CRLF-to-LF normalization',
+    'sources':{p.name:hashlib.sha256(p.read_bytes().replace(b'\r\n',b'\n')).hexdigest() for p in [code/'verify.py',code/'clifford.py']}}
 (out/'environment.json').write_text(json.dumps(record,indent=2)+'\n',encoding='utf-8')
 print('34 supplementary numerical checks passed; the written general proofs are separate.')

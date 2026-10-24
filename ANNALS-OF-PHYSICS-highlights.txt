@@ -1,0 +1,4 @@
+- Five explicit axioms restrict the residual dimension to two or ten.
+- Majorana reality bounds the rank of the null frame by the Witt index.
+- Direct contractions determine the cubic absorption identity and its source.
+- A helicity-span bound excludes finite low-spin multiplets in the stated class.

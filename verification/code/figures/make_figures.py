@@ -14,7 +14,7 @@ from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--output-dir', type=Path,
-                    default=Path(__file__).resolve().parents[3]/'manuscript'/'figures')
+                    default=Path(__file__).resolve().parents[2]/'generated-figures')
 OUT = str(parser.parse_args().output_dir)
 os.makedirs(OUT, exist_ok=True)
 plt.rcParams.update({"font.family": "serif", "font.size": 10, "mathtext.fontset": "cm"})

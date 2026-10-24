@@ -1,39 +1,47 @@
-# Paper_4 — null-projected supersymmetric Yang–Mills theories
+# Paper_4 — direct journal submission package
 
 **Residual-dimension obstructions for null-projected supersymmetric Yang–Mills theories**
 
-Sole author: **Deep Bhattacharjee**, matching the existing preprint.
-Version 1.1.0. Target for evaluation: **Journal of High Energy Physics (JHEP)**.
-Manuscript DOI: https://doi.org/10.5281/zenodo.23611588 .
+Sole author: **Deep Bhattacharjee**, preserving the public preprint byline.
+Version **1.1.0**. Manuscript DOI: https://doi.org/10.5281/zenodo.23611588 .
 Original preprint: https://hexagonmath.org/2610.00471v1 .
 
-The main theorem gives necessary conditions for the precisely defined N1–N5
-class: k ≤ min(s,t), residual dimension s+t−2k in {2,10}, and s−t in
-{8,0,−8}. A separate theorem gives a massless helicity-span obstruction under
-positive-energy unitarity and vanishing tensor charges. All general proofs are
-written in the manuscript. Numerical checks supplement the proofs.
+## Alternative targets
 
-Existence and full dynamics in every permitted signature, other transformation
-rules or field contents, and a nonperturbative quantum construction are outside
-the proved results. This package does not assert a universal classification of
-supersymmetric theories or a solution of the remaining Hodge/GSC problems.
+| Target | Manuscript | Editable source | Submission letter |
+|---|---|---|---|
+| Physical Review D — first target | `Paper_4_PRD.pdf` | `PRD/main.tex` (REVTeX 4.2) | `COVER-LETTER-PRD.md` |
+| Annals of Physics — alternative | `Paper_4_Annals_of_Physics.pdf` | `Annals-of-Physics/main.tex` (elsarticle) | `COVER-LETTER-ANNALS-OF-PHYSICS.md` |
 
-## Files
+Both targets have direct file-upload routes that do not require an arXiv
+identifier. Choose one journal at a time. No journal submission has been made.
+The two PDFs present the same mathematical manuscript in alternative layouts;
+they are not distinct papers or separate discoveries. Both carry the same DOI.
 
-- `Paper_4_JHEP.pdf`: the manuscript to review.
-- `manuscript/main.tex`: master file with five vector figures and the full bibliography.
-- `PROOF-AUDIT.md` and `VERIFICATION.md`: deductions, scope and verification provenance.
-- `COVER-LETTER-JHEP.md` and `SUBMISSION-NOTES.md`: editable submission documents.
-- `verification/code/`: original numerical programs and figure-generation source.
-- `verification/current/`: this package's checks and build logs.
-- `provenance/`: source identification and the published Zenodo record.
+The main result supplies necessary conditions under the five explicit N1–N5
+assumptions: k ≤ min(s,t), residual dimension s+t−2k in {2,10}, and s−t in
+{8,0,−8}. A separate helicity-span result assumes positive-energy unitarity and
+vanishing tensor charges. General proofs are written in full. Thirty-four
+supplementary gamma-matrix checks passed; they are finite numerical diagnostics.
+Existence in every permitted signature and a nonperturbative quantum theory
+remain outside these results. No universal supersymmetry classification or
+journal acceptance is claimed.
 
-Build: `python scripts/build_manuscript.py` (TeX Live with `pdflatex` required).
-Checks: `pip install -r verification/code/requirements.txt`, then
-`python scripts/verify.py`. The scripts never treat floating-point samples as
-proofs of identities for all spinors and signatures.
+## Contents and reproduction
 
-The single final ZIP is created only after confirming Zenodo publication and the
-exact PDF checksum. See `PACKAGE-METADATA.json` and `SHA256SUMS.txt`.
-No journal submission or acceptance is claimed. JHEP additionally requires an
-arXiv identifier and a matching arXiv version; that identifier remains pending.
+Each source directory is independently compilable: run `pdflatex main.tex`
+three times there, or use `python scripts/build_manuscript.py` from this root.
+TeX Live/MiKTeX with REVTeX, elsarticle and the listed standard packages is needed.
+For numerical checks, install `verification/code/requirements.txt` and run
+`python scripts/verify.py`. `verification/current/` records the check run and
+current page audits; `verification/previous/` separates historical engine/JHEP
+staging logs. Optional figure regeneration is described in `VERIFICATION.md`.
+
+Read `SUBMISSION-NOTES.md`, `PROOF-AUDIT.md` and `AUTHOR-DETAILS.md` before
+using the corresponding journal letter. Annals of Physics highlights are in
+`ANNALS-OF-PHYSICS-highlights.txt`. Both PDFs retain a detailed AI-use declaration.
+
+`PACKAGE-METADATA.json` and `SHA256SUMS.txt` describe the single final ZIP.
+Its creation is gated on published Zenodo status and exact checksums of both
+archived PDFs. The code and editable files are also in the versioned GitHub
+release: https://github.com/creelie/Paper_4 .
