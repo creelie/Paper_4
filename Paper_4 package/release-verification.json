@@ -1,0 +1,39 @@
+{
+  "status": "published-and-archive-verified",
+  "paper": 4,
+  "repo": "Paper_4",
+  "doi": "10.5281/zenodo.23629626",
+  "doi_url": "https://doi.org/10.5281/zenodo.23629626",
+  "record_id": 23629626,
+  "conceptdoi": "10.5281/zenodo.23612780",
+  "public_api": "https://zenodo.org/api/records/23629626",
+  "version": "1.2.0",
+  "license": {
+    "id": "mit-license"
+  },
+  "creators": [
+    {
+      "name": "Bhattacharjee, Deep",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India",
+      "orcid": "0000-0003-0466-750X"
+    }
+  ],
+  "release": "https://github.com/creelie/Paper_4/releases/tag/v1.2.0",
+  "release_commit": "6bd5401d2baef418ad3d4eab5bfa49892472a24a",
+  "package_url": "https://github.com/creelie/Paper_4/tree/v1.2.0/Paper_4%20package",
+  "package_path": "Paper_4 package",
+  "archival_file": {
+    "id": "3c3ea115-f6e7-4891-9b3b-139a4d3becad",
+    "key": "creelie/Paper_4-v1.2.0.zip",
+    "size": 3301716,
+    "checksum": "md5:7c18fcbe9584bbc731022fe87d3233ee",
+    "links": {
+      "self": "https://zenodo.org/api/records/23629626/files/creelie/Paper_4-v1.2.0.zip/content"
+    }
+  },
+  "archive_sha256": "169467fb2e499f8871156e584767f970890e05a931c6d7a147946af63310975f",
+  "matching_payloads": 13,
+  "payloads_match_committed_git_and_archived_bytes": true,
+  "verified_at_utc": "2026-10-25T00:32:13.648908+00:00",
+  "journal_submission_performed": false
+}

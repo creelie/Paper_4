@@ -1,5 +1,5 @@
 {
-  "status": "reviewed and compiled package; release DOI pending",
+  "status": "published and checksum-verified package; DOI receipt added after publication",
   "paper_number": 4,
   "title": "Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories",
   "authors": [
@@ -15,7 +15,7 @@
   "planned_release": "v1.2.0",
   "journal": "Annals of Physics",
   "prior_manuscript_or_source_doi": "10.5281/zenodo.23611588",
-  "new_package_doi": null,
+  "new_package_doi": "10.5281/zenodo.23629626",
   "row_or_margin_line_numbers": false,
   "journal_submission_performed": false,
   "hexagon_submission_performed": false,
@@ -29,6 +29,11 @@
       "path": "aiprovinance.md",
       "bytes": 1978,
       "sha256": "fefb8fbbb72a8f2958d11668b017b53359d3ec8b208708758dbc204ebf41c837"
+    },
+    {
+      "path": "ARCHIVE-DOI.md",
+      "bytes": 1150,
+      "sha256": "c5c506a97b1714c3e2d4fb43462709c768489dc3fd0636688f513613c0c869d4"
     },
     {
       "path": "build-verification.json",
@@ -47,8 +52,8 @@
     },
     {
       "path": "hexagonsubmissionform.md",
-      "bytes": 4963,
-      "sha256": "2ca0c50feb9a451ebe4d546734d84df9601c342559733aa26cffad64af39d52d"
+      "bytes": 5174,
+      "sha256": "2db88c4e204abcb94d854148b44592854c7afd6a8351d5fd23ba23d1bc0b2531"
     },
     {
       "path": "journalaideclarationform.pdf",
@@ -62,13 +67,18 @@
     },
     {
       "path": "journalsubmissiondetails.md",
-      "bytes": 4321,
-      "sha256": "15e19c5eb776208d03a2b6dba7d1ce40f6cf71228a47115603b8035644b4755e"
+      "bytes": 4532,
+      "sha256": "96903a0a2787a9dd6f721d3faf2927a40be439dc2eec3c579d80b369e7b13961"
     },
     {
       "path": "README.md",
-      "bytes": 1364,
-      "sha256": "4f168bb3dafaf4767f88d89d967f824635b5c0a93c616405aa9b2f7a733e6699"
+      "bytes": 1575,
+      "sha256": "0ce829bd594bbbf0f5b63abeeee4bce9a67ea563c135d4d8c282cc646b399187"
+    },
+    {
+      "path": "release-verification.json",
+      "bytes": 1444,
+      "sha256": "60a52ff461138204bf5d10a1becdcbdccaba327e86416e66fe12af3ecba17b65"
     },
     {
       "path": "Residual-dimension_obstructions_for_null-projected_supersymmetric_Yang-Mills_theories.pdf",
@@ -82,8 +92,13 @@
     },
     {
       "path": "submission-metadata.json",
-      "bytes": 6072,
-      "sha256": "2178ef74f95407a41bbe957d5b61224b6feb3c9791c5613bb3887dd213487c3d"
+      "bytes": 6292,
+      "sha256": "a6d891e35209c11f1bf14255739224af99e4d05c9435b75ce79ae48ec8331f8f"
     }
+  ],
+  "release_commit": "6bd5401d2baef418ad3d4eab5bfa49892472a24a",
+  "post_archive_receipt_files": [
+    "release-verification.json",
+    "ARCHIVE-DOI.md"
   ]
 }
