@@ -1,0 +1,89 @@
+{
+  "status": "reviewed and compiled package; release DOI pending",
+  "paper_number": 4,
+  "title": "Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories",
+  "authors": [
+    {
+      "name": "Deep Bhattacharjee",
+      "orcid": "0000-0003-0466-750X",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India",
+      "email": "itsdeep@live.com"
+    }
+  ],
+  "repository": "https://github.com/creelie/Paper_4",
+  "github_package_directory": "Paper_4 package",
+  "planned_release": "v1.2.0",
+  "journal": "Annals of Physics",
+  "prior_manuscript_or_source_doi": "10.5281/zenodo.23611588",
+  "new_package_doi": null,
+  "row_or_margin_line_numbers": false,
+  "journal_submission_performed": false,
+  "hexagon_submission_performed": false,
+  "files": [
+    {
+      "path": "AI_PROVENANCE.md",
+      "bytes": 1978,
+      "sha256": "fefb8fbbb72a8f2958d11668b017b53359d3ec8b208708758dbc204ebf41c837"
+    },
+    {
+      "path": "aiprovinance.md",
+      "bytes": 1978,
+      "sha256": "fefb8fbbb72a8f2958d11668b017b53359d3ec8b208708758dbc204ebf41c837"
+    },
+    {
+      "path": "build-verification.json",
+      "bytes": 1272,
+      "sha256": "488d257216d22302597a7319bf932f4cf8fd1c3cd4230e53725d7ef0b759e068"
+    },
+    {
+      "path": "coverletterjournal.pdf",
+      "bytes": 83576,
+      "sha256": "b34d2ca8d020de94da5294f150fc1b27fec674e35b65f44bb5b3b1496d891d44"
+    },
+    {
+      "path": "coverlettertex.zip",
+      "bytes": 1204,
+      "sha256": "b7496b43b1d988360cf1b790405792350536098d6bc80637549e6d781962dee6"
+    },
+    {
+      "path": "hexagonsubmissionform.md",
+      "bytes": 4963,
+      "sha256": "2ca0c50feb9a451ebe4d546734d84df9601c342559733aa26cffad64af39d52d"
+    },
+    {
+      "path": "journalaideclarationform.pdf",
+      "bytes": 108267,
+      "sha256": "cee0db81bf7ebe9a038351cdee0a8efa645ebced8b6bb0e605705003ec6e5bdb"
+    },
+    {
+      "path": "journalaideclarationform.tex",
+      "bytes": 2037,
+      "sha256": "ece88495d99f55a74dc8cdc13d642752a5a32d491cce35804bf8003f25140abf"
+    },
+    {
+      "path": "journalsubmissiondetails.md",
+      "bytes": 4321,
+      "sha256": "15e19c5eb776208d03a2b6dba7d1ce40f6cf71228a47115603b8035644b4755e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1364,
+      "sha256": "4f168bb3dafaf4767f88d89d967f824635b5c0a93c616405aa9b2f7a733e6699"
+    },
+    {
+      "path": "Residual-dimension_obstructions_for_null-projected_supersymmetric_Yang-Mills_theories.pdf",
+      "bytes": 845605,
+      "sha256": "e6a4979e1adc095ba093b06866f33ba8dfa5300083e9d22ebdbca62fd916d19c"
+    },
+    {
+      "path": "Residual-dimension_obstructions_for_null-projected_supersymmetric_Yang-Mills_theoriestex.zip",
+      "bytes": 182760,
+      "sha256": "f8c91acc5f02595d7d78bd5eb9afef896ea459d553a4afc03a5bdd84cb9d2c94"
+    },
+    {
+      "path": "submission-metadata.json",
+      "bytes": 6143,
+      "sha256": "ffbfb8cb50f364f479565b5ab6539483f3551b6cf13053599019721ac54c8e5f"
+    }
+  ]
+}

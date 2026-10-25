@@ -1,12 +1,13 @@
 {
-  "title": "Verification files for residual-dimension obstructions in null-projected SYM",
+  "title": "Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories — submission package",
   "upload_type": "software",
-  "version": "1.1.0",
-  "description": "Two alternative manuscript layouts for direct submission to Physical Review D or Annals of Physics, with editable source, complete written arguments, supplementary gamma-matrix checks and audit records. Manuscript DOI: 10.5281/zenodo.23611588. Necessary conditions under N1\u2013N5 are distinguished from unproved general existence or nonperturbative quantum construction. No journal submission or acceptance is claimed.",
+  "version": "1.2.0",
+  "description": "<p>Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories. Hexagon/Overleaf and Annals of Physics submission preparation, version 1.2.0. The reviewed folder Paper_4 package contains the article PDF, a minimal compilable TeX ZIP, AI provenance, Hexagon fields, journal details, an unsent cover letter with editable source, and an author-prepared AI disclosure. All PDFs have no row or margin line numbers. No journal submission or acceptance is claimed.</p><p>The paper proves necessary residual-dimension and signature conditions for null-projected supersymmetric Yang-Mills constructions under five explicit axioms. It also gives a separate unitary helicity-span obstruction. It does not assert existence in every allowed signature or a nonperturbative quantum construction.</p><p>Verification scope: No general Lean formalisation is claimed. The proof is written in the manuscript; the gamma-matrix calculations are supplementary finite numerical checks.</p><p>Original preprint: https://hexagonmath.org/2610.00471v1. Earlier manuscript/source DOI: 10.5281/zenodo.23611588. Original attribution and component licences are preserved. Human-understanding and mixed-text declarations record the submitting author's explicit statement on 25 October 2026. The standalone AI declaration is author-prepared, not an official signed publisher form.</p>",
   "creators": [
     {
       "name": "Bhattacharjee, Deep",
-      "orcid": "0000-0003-0466-750X"
+      "orcid": "0000-0003-0466-750X",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India"
     }
   ],
   "license": "MIT",
@@ -15,6 +16,26 @@
       "identifier": "10.5281/zenodo.23611588",
       "scheme": "doi",
       "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "https://hexagonmath.org/2610.00471v1",
+      "scheme": "url",
+      "relation": "isSupplementTo"
     }
-  ]
+  ],
+  "publication_date": "2026-10-25",
+  "keywords": [
+    "supersymmetric Yang-Mills theory",
+    "null projection",
+    "Clifford algebras",
+    "Majorana-Weyl spinors",
+    "Fierz identity",
+    "spacetime signature",
+    "81T60",
+    "81T13",
+    "15A66",
+    "81R25",
+    "83E15"
+  ],
+  "notes": "Component licence notices in the original repository remain authoritative. The article is already available under the existing Hexagon CC BY 4.0 record. New package DOI is assigned by Zenodo after the GitHub release; no earlier DOI is reused as the new release DOI."
 }

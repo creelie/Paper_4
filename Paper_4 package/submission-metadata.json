@@ -1,0 +1,71 @@
+{
+  "number": 4,
+  "title": "Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories",
+  "slug": "Residual-dimension_obstructions_for_null-projected_supersymmetric_Yang-Mills_theories",
+  "source": "C:/FNL_2/Annals/Paper_4/Annals-of-Physics",
+  "pdf": "C:/FNL_2/Annals/Paper_4/Paper_4_Annals_of_Physics.pdf",
+  "repo": "Paper_4",
+  "local_repo": "C:/FNL_2/Annals/Paper_4",
+  "repo_package_dir": "Paper_4 package",
+  "next_version": "1.2.0",
+  "manuscript_doi": "10.5281/zenodo.23611588",
+  "preprint": "https://hexagonmath.org/2610.00471v1",
+  "primary_subject": "math-ph",
+  "cross_list": [
+    "math.RT"
+  ],
+  "msc2020": [
+    "81T60",
+    "81T13",
+    "15A66",
+    "81R25",
+    "83E15"
+  ],
+  "tags": [
+    "supersymmetric Yang-Mills theory",
+    "null projection",
+    "Clifford algebras",
+    "Majorana-Weyl spinors",
+    "Fierz identity",
+    "spacetime signature"
+  ],
+  "journal": "Annals of Physics",
+  "journal_slug": "annals-of-physics",
+  "journal_scope_url": "https://shop.elsevier.com/journals/annals-of-physics/0003-4916",
+  "journal_fit": "A detailed first-principles obstruction theorem for supersymmetric gauge constructions fits the journal's fundamental theoretical-physics scope and long-form treatment.",
+  "contribution": "The paper proves necessary residual-dimension and signature conditions for null-projected supersymmetric Yang-Mills constructions under five explicit axioms. It also gives a separate unitary helicity-span obstruction. It does not assert existence in every allowed signature or a nonperturbative quantum construction.",
+  "ai_scope": "Claude Code assisted the original preparation. OpenAI Codex assisted proof auditing, the explicit helicity-span argument, the null-current lemma, scope corrections and editing. Explicit gamma-matrix programs supply supplementary numerical checks.",
+  "formalization_scope": "No general Lean formalisation is claimed. The proof is written in the manuscript; the gamma-matrix calculations are supplementary finite numerical checks.",
+  "formalization_urls": [],
+  "tools": [
+    "Anthropic Claude / Claude Code",
+    "OpenAI Codex",
+    "Python",
+    "LaTeX / pdfLaTeX / TikZ"
+  ],
+  "authors": [
+    {
+      "name": "Deep Bhattacharjee",
+      "orcid": "0000-0003-0466-750X",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India",
+      "email": "itsdeep@live.com"
+    }
+  ],
+  "abstract_tex": "We prove necessary residual-dimension conditions for null-projected supersymmetric Yang--Mills constructions with a Majorana--Weyl gaugino under five explicit assumptions on the projection, transformations, translation bracket and absorption of cubic fermion terms. A real gaugino bounds the null-frame rank by the Witt index, and the residual dimension must be two or ten. Consequently the difference between the numbers of spacelike and timelike directions must be zero or eight in absolute value. The main algebraic step is a converse for a cubic gamma-matrix identity, relating the spinor dimension to the vector dimension. This obstructs transferring Nishino's mechanism to the specified higher-dimensional signature families, including nineteen plus three and twenty-seven plus three. These are necessary conditions within the stated axioms; existence in every remaining signature is a separate question. For unitary single-time theories with vanishing tensor charges on a massless multiplet, we also give a helicity-span argument excluding any finite collection of scalar, spinor and vector polarizations when there are more than sixteen real supercharges. All general arguments are written in the text; explicit gamma-matrix computations serve as supplementary checks.",
+  "abstract_plain": "We prove necessary residual-dimension conditions for null-projected supersymmetric Yang--Mills constructions with a Majorana--Weyl gaugino under five explicit assumptions on the projection, transformations, translation bracket and absorption of cubic fermion terms. A real gaugino bounds the null-frame rank by the Witt index, and the residual dimension must be two or ten. Consequently the difference between the numbers of spacelike and timelike directions must be zero or eight in absolute value. The main algebraic step is a converse for a cubic gamma-matrix identity, relating the spinor dimension to the vector dimension. This obstructs transferring Nishino's mechanism to the specified higher-dimensional signature families, including nineteen plus three and twenty-seven plus three. These are necessary conditions within the stated axioms; existence in every remaining signature is a separate question. For unitary single-time theories with vanishing tensor charges on a massless multiplet, we also give a helicity-span argument excluding any finite collection of scalar, spinor and vector polarizations when there are more than sixteen real supercharges. All general arguments are written in the text; explicit gamma-matrix computations serve as supplementary checks.",
+  "human_understanding": "All parts of this contribution have been checked and understood by a human.",
+  "human_understanding_basis": "Explicit declaration by the user in this conversation on 25 October 2026.",
+  "text_classification": "A mix of human-written and AI-generated",
+  "primary_pdf": "Residual-dimension_obstructions_for_null-projected_supersymmetric_Yang-Mills_theories.pdf",
+  "tex_zip": "Residual-dimension_obstructions_for_null-projected_supersymmetric_Yang-Mills_theoriestex.zip",
+  "pdf_sha256": "e6a4979e1adc095ba093b06866f33ba8dfa5300083e9d22ebdbca62fd916d19c",
+  "tex_zip_sha256": "f8c91acc5f02595d7d78bd5eb9afef896ea459d553a4afc03a5bdd84cb9d2c94",
+  "pages": 33,
+  "hexagon_license": "CC BY 4.0 (manuscript record)",
+  "row_or_margin_line_numbers": false,
+  "source_changes_for_upload": [],
+  "journal_submission_performed": false,
+  "doi_of_new_package": null,
+  "package_release_pending": true,
+  "package_license": "MIT for repository code; manuscript preprint available under CC BY 4.0"
+}
