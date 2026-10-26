@@ -1,0 +1,68 @@
+name: release
+
+# Run by hand from the Actions tab after the pull request is merged. It runs the supplementary
+# gamma-matrix checks, then publishes a GitHub release with the Hexagon v2 package in
+# hexagon-v2/ and the notes in .github/RELEASE_NOTES.md.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag, e.g. v1.3.0"
+        required: true
+        default: "v1.3.0"
+      target:
+        description: "Branch or commit to tag"
+        required: true
+        default: "main"
+      title:
+        description: "Release title"
+        required: true
+        default: "Hexagon v2 package (amsart) of Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories"
+
+permissions:
+  contents: write
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.target }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Supplementary gamma-matrix checks
+        run: |
+          python -m pip install -r verification/code/requirements.txt
+          python scripts/verify.py
+
+  release:
+    needs: checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.target }}
+      - name: Check the package files
+        run: |
+          for f in hexagon-v2/NullProjectedSYM_v2.pdf \
+                   hexagon-v2/NullProjectedSYM_v2-tex.zip \
+                   hexagon-v2/NullProjectedSYM_v2-arxiv.tar.gz \
+                   hexagon-v2/HEXAGON_FORM.md \
+                   hexagon-v2/AI_PROVENANCE.md; do
+            test -s "$f" || { echo "missing $f"; exit 1; }
+          done
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          TARGET: ${{ inputs.target }}
+          TITLE: ${{ inputs.title }}
+        run: |
+          gh release create "$TAG" hexagon-v2/NullProjectedSYM_v2* hexagon-v2/HEXAGON_FORM.md hexagon-v2/AI_PROVENANCE.md \
+            --target "$TARGET" \
+            --title "$TAG: $TITLE" \
+            --notes-file .github/RELEASE_NOTES.md

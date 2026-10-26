@@ -1,0 +1,3 @@
+Replacement version of the Hexagon preprint https://hexagonmath.org/2610.00471v1 in the amsart single-column layout.
+
+Files: `NullProjectedSYM_v2-tex.zip` (the source to upload; main.tex, pdfLaTeX), `NullProjectedSYM_v2.pdf` (22 pages), `NullProjectedSYM_v2-arxiv.tar.gz`, `HEXAGON_FORM.md` and `AI_PROVENANCE.md`. The mathematics, abstract and AI declaration are those of the Annals of Physics package of release v1.2.0; only the layout changed. The source compiles on TeX Live 2026 with `pdflatex -jobname=output main.tex` with no errors and no bad boxes. The supplementary gamma-matrix checks of `scripts/verify.py` pass.
