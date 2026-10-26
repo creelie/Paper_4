@@ -9,3 +9,4 @@ __pycache__/
 **/main.pdf
 *.zip
 *.zip.sha256
+!hexagon-v2/*.zip
