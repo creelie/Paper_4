@@ -81,7 +81,7 @@ packet does not press the portal's Process or Submit button on the author's beha
 
 
 Earlier package archive (elsarticle layout): https://doi.org/10.5281/zenodo.23629626 (release v1.2.0).
-This amsart version is release v1.3.0 of https://github.com/creelie/Paper_4; its Zenodo DOI is recorded here once the record is published.
+This amsart version is release v1.3.0 of https://github.com/creelie/Paper_4 (https://github.com/creelie/Paper_4/releases/tag/v1.3.0), archived on Zenodo as https://doi.org/10.5281/zenodo.23672585 (concept record https://doi.org/10.5281/zenodo.23612780); the note under the abstract names it.
 
 ## Files of this version (amsart, single column)
 
