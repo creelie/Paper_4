@@ -2,7 +2,7 @@
 
 ## Hexagon v2 package (amsart, single column)
 
-[hexagon-v2](hexagon-v2/) holds the replacement version of https://hexagonmath.org/2610.00471v1 in the amsart single-column layout: `NullProjectedSYM_v2-tex.zip` (upload this; main.tex, pdfLaTeX), `NullProjectedSYM_v2.pdf` (22 pages, the reference build), `NullProjectedSYM_v2-arxiv.tar.gz`, `HEXAGON_FORM.md` (portal fields) and `AI_PROVENANCE.md` (for Hexagon's separate provenance field). The mathematics, abstract and AI declaration are those of the Annals of Physics package below; only the layout changed. The source compiles on TeX Live 2026 with `pdflatex -jobname=output main.tex` with no errors and no bad boxes. Version: 1.3.0. Its Zenodo DOI is recorded here once the record is published.
+[hexagon-v2](hexagon-v2/) holds the replacement version of https://hexagonmath.org/2610.00471v1 in the amsart single-column layout: `NullProjectedSYM_v2-tex.zip` (upload this; main.tex, pdfLaTeX), `NullProjectedSYM_v2.pdf` (22 pages, the reference build), `NullProjectedSYM_v2-arxiv.tar.gz`, `HEXAGON_FORM.md` (portal fields) and `AI_PROVENANCE.md` (for Hexagon's separate provenance field). The mathematics, abstract and AI declaration are those of the Annals of Physics package below; only the layout changed. The source compiles on TeX Live 2026 with `pdflatex -jobname=output main.tex` with no errors and no bad boxes. Version: 1.3.0, release https://github.com/creelie/Paper_4/releases/tag/v1.3.0, package DOI: [10.5281/zenodo.23672585](https://doi.org/10.5281/zenodo.23672585).
 
 ## Annals of Physics upload package
 
