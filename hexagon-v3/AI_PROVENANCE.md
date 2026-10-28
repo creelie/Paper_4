@@ -6,9 +6,11 @@ Source: https://github.com/creelie/Paper_4 (release v1.6.0, https://doi.org/10.5
 
 ## Declarations
 
-Writing: a mix of human-written and AI-generated text.
-Understanding: full human understanding. All parts of this contribution have been
-checked and understood by a human.
+Writing: a mix of human writing and AI-generated text from ChatGPT-6.1 Sol Ultra
+(OpenAI), Claude Code with Opus 5.5 (Ultracode) and Claude Code with Fable 5.1
+(medium effort) (Anthropic).
+Understanding: full human understanding. Every part of this contribution has been
+checked by the author and is understood by him.
 
 The understanding declaration is the author's own. It is not a statement by any AI
 system that a human has read the work; the author confirms it by submitting.
@@ -29,13 +31,13 @@ argument (Lemma 6.2), the null-frame current (Lemma A.1), corrections of scope a
 editing.
 
 **Third version.**
-- ChatGPT (OpenAI) wrote an independent audit of whether the proposals of
+- ChatGPT-6.1 Sol Ultra (OpenAI) wrote an independent audit of whether the proposals of
   Phys. Rev. D 99 (2019) 046004 and Phys. Lett. B 808 (2020) 135674 fall under
   (N1)-(N5). It concluded that Nishino's unchanged real frame cannot be transferred
   to 27+3 or 19+3, that the rank-two alternative fails at the absorption step, and
   that the sources do not contain the field equations needed to decide other
   constructions. It also extracted the source texts and equation numbers.
-- Claude Code checked that audit against the source PDFs (it was accurate) and
+- Claude Code (Opus 5.5 with Ultracode, and Fable 5.1 at medium effort) checked that audit against the source PDFs (it was accurate) and
   drafted, with the author, the new material: Section 7.1 with Proposition 7.1 and its
   four-step proof, Table 1, Remarks 7.2 and 7.3, Appendix D, the program
   transfer_check.py, Figures 8 and 9 and their generator make_transfer_figures.py,
@@ -82,7 +84,7 @@ editing.
 
 ## Tools
 
-Anthropic Claude (Claude Code); OpenAI ChatGPT; OpenAI Codex; Python (NumPy, SciPy,
-Matplotlib); LaTeX (pdfLaTeX, TikZ). Exact model versions are not inferred from tool
-names. AI systems are not listed as authors. No private prompts or chat transcripts
+OpenAI ChatGPT-6.1 Sol Ultra; Anthropic Claude Code with Opus 5.5 (Ultracode) and
+with Fable 5.1 (medium effort); OpenAI Codex (second version); Python (NumPy, SciPy,
+Matplotlib); LaTeX (pdfLaTeX, TikZ). The model versions are as declared by the author. AI systems are not listed as authors. No private prompts or chat transcripts
 are included.
