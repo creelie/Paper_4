@@ -64,4 +64,4 @@ The ZIP holds main.tex, preamble.tex, abstract.tex, body.tex, bib.tex, seven fig
 
 Main document main.tex, pdfLaTeX: pdflatex -jobname=output main.tex, three passes. The extracted ZIP builds with 0 errors, 0 overfull or underfull boxes and no undefined references. Confirm the rendered title, abstract, byline and references in the portal preview.
 
-Source, programs and logs: https://github.com/creelie/Paper_4, release v1.5.0 (DOI below once Zenodo assigns it). The second version is release v1.3.0, https://doi.org/10.5281/zenodo.23672585; concept record https://doi.org/10.5281/zenodo.23612780.
+Source, programs and logs: https://github.com/creelie/Paper_4, release v1.5.0, archived as https://doi.org/10.5281/zenodo.23744833. The second version is release v1.3.0, https://doi.org/10.5281/zenodo.23672585; concept record https://doi.org/10.5281/zenodo.23612780.
