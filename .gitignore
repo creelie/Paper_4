@@ -10,3 +10,4 @@ __pycache__/
 *.zip
 *.zip.sha256
 !hexagon-v2/*.zip
+!hexagon-v3/*.zip
