@@ -2,7 +2,7 @@
 
 Author and submitting contributor: Deep Bhattacharjee, ORCID 0000-0003-0466-750X.
 Earlier versions: https://hexagonmath.org/2610.00471v1, https://hexagonmath.org/2610.00471v2
-Source and programs: https://github.com/creelie/Paper_4 (release v1.5.0, https://doi.org/10.5281/zenodo.23744833)
+Source: https://github.com/creelie/Paper_4 (release v1.6.0, with the corrected statement of Proposition 7.1; programs and logs also in release v1.5.0, https://doi.org/10.5281/zenodo.23744833)
 
 ## Declarations
 
@@ -47,10 +47,21 @@ editing.
   and Sezgin (1997); checked every DOI of the bibliography against Crossref, every
   arXiv identifier against arXiv and the Zenodo records against Zenodo; and rebuilt
   and read every page of the PDF.
+- A second independent technical review of the third version, supplied by the author,
+  re-derived the trace identities, the null ranks and the rank-two dimensions, reran
+  both programs (24 and 34 checks passed), and found four statement-level points in
+  Section 7. Claude Code checked each against the text, agreed with all four, and made
+  the corrections: the opening of Section 7 no longer says that translations can arise
+  only from null contractions (a footnote gives a spacelike contraction, outside
+  (N1)-(N5)); the ten null vectors in Step 2 are tied to Nishino's own contraction;
+  Proposition 7.1 now assumes a coupling g != 0 instead of deriving it from the gauge
+  algebra, states that its conditions hold for all gaugino values allowed by (b) and
+  all parameters, and treats rank zero separately. None of the four changes the
+  theorems or the conclusion of Proposition 7.1.
 
 ## What was checked, and what could not be
 
-- Proofs: every step of Proposition 7.1 was re-derived by hand from Lemmas 2.2, 2.3,
+- Proofs: every step of Proposition 7.1, in its corrected statement, was re-derived by hand from Lemmas 2.2, 2.3,
   5.2, Proposition 2.1 and Theorems 3.3, 5.6; the numbers for 27+3 (D' = 26, N = 4096,
   j = -3/512, 4072 against 9/32) and 19+3 (D' = 18, N = 256 against 32) were
   recomputed.
