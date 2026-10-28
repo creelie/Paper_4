@@ -2,7 +2,11 @@
 
 ## Hexagon v3 package
 
-[hexagon-v3](hexagon-v3/) holds the third version, replacing https://hexagonmath.org/2610.00471v2: `NullProjectedSYM_v3-tex.zip` (upload this; main.tex, pdfLaTeX), `NullProjectedSYM_v3.pdf` (24 pages), `NullProjectedSYM_v3-arxiv.tar.gz`, `HEXAGON_FORM.md`, `AI_PROVENANCE.md`, and the unpacked source in `source/`. It adds Proposition 7.1: the transfer of Nishino's construction to (11+8n)+3 proposed by Rios, Marrani and Chester (Phys. Rev. D 99 (2019) 046004, Sec. III.A) fails for every rank of a real null frame; in 27+3 a real frame has at most three null vectors against Nishino's ten, the translation bracket allows only two, and with two the residual spinors have 4096 components where absorption of the cubic terms needs 48. Remark 7.2 treats complex frames (they force a complex gaugino) and Remark 7.3 states what the axioms N1-N5 do and do not decide. Version: 1.4.0.
+[hexagon-v3](hexagon-v3/) holds the third version, replacing https://hexagonmath.org/2610.00471v2: `NullProjectedSYM_v3-tex.zip` (upload this; main.tex, pdfLaTeX; the three Python programs are in its `anc/` folder), `NullProjectedSYM_v3.pdf` (26 pages), `NullProjectedSYM_v3-arxiv.tar.gz`, `HEXAGON_FORM.md`, `AI_PROVENANCE.md`, and the unpacked source in `source/`.
+
+Section 7.1 answers the proposal of Rios, Marrani and Chester (Phys. Rev. D 99 (2019) 046004, Sec. III.A; Phys. Lett. B 808 (2020) 135674) to repeat Nishino's proof in the signatures (11+8n)+3. It quotes the proposal, writes out Nishino's equations (4.3)-(4.15) of Nucl. Phys. B 523 (1998) 450, and proves (Proposition 7.1) that the repetition fails for every rank k of a real null frame: k <= 3, so Nishino's rank 4n+2 (ten in 27+3) does not fit; the translation bracket allows only k = 2; and at k = 2 the transfer satisfies N1-N4 while the cubic gaugino terms cannot be absorbed (4096 residual spinor components in 27+3 against 48, 256 against 32 in 19+3). Appendix D checks each step in explicit gamma matrices of size 2^15 with `verification/code/transfer_check.py` (24 checks; log in `verification/current/transfer-checks.txt`); Figures 8 and 9 are drawn by `verification/code/figures/make_transfer_figures.py`. Theories outside N1-N5 are not decided.
+
+Version 1.5.0. The first v3 package was release v1.4.0, DOI [10.5281/zenodo.23744131](https://doi.org/10.5281/zenodo.23744131).
 
 ## Hexagon v2 package (amsart, single column)
 
@@ -46,7 +50,7 @@ Each source directory is independently compilable: run `pdflatex main.tex`
 three times there, or use `python scripts/build_manuscript.py` from this root.
 TeX Live/MiKTeX with REVTeX, elsarticle and the listed standard packages is needed.
 For numerical checks, install `verification/code/requirements.txt` and run
-`python scripts/verify.py`. `verification/current/` records the check run and
+`python scripts/verify.py` (34 checks) and `python verification/code/transfer_check.py` (24 checks). `verification/current/` records the check run and
 current page audits; `verification/previous/` separates historical engine/JHEP
 staging logs. Optional figure regeneration is described in `VERIFICATION.md`.
 

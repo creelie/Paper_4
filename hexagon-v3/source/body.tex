@@ -27,7 +27,7 @@ Figure~\ref{fig:signatures} shows the geometry. Nishino's signatures lie on the 
 
 For a single time we can say more, without any assumption about how the theory is built. In $(9+8n)+1$ the anticommutator of two supercharges contains the momentum, and in a unitary theory the supercharges that act nontrivially on a massless state generate a Clifford algebra with $2^{3+4n}$ generators. A massless multiplet without tensor charges then has at least $2^{2^{2+4n}}$ states, half of them bosonic (Theorem~\ref{thm:singletime}). For $n=1$ that is $2^{64}$ states, against the $16$ bosonic states of a vector field in eighteen dimensions.
 
-The paper is organized as follows. Section~\ref{sec:spinors} collects what we need about spinors in signature $(s,t)$: the decomposition of the symmetric square of a Weyl spinor, which shows that the superalgebras of Ref.~\cite{RiosMarraniChester2019} are the most general ones and carry no information about dynamics, and two lemmas on isotropic subspaces. Section~\ref{sec:vector} proves the theorem on which everything else rests: if symmetric gamma matrices obey an identity of the type that absorption requires, the spinor dimension is $2(d-2)$. Section~\ref{sec:standard} applies it to ordinary super Yang--Mills theory. Section~\ref{sec:null} describes null frames by fermionic oscillators, states the axioms, and proves the reduction to ten residual dimensions and the Main Theorem. Section~\ref{sec:singletime} treats the single-time family by representation theory, and Sec.~\ref{sec:consequences} spells out what the results mean for $27+3$ and $19+3$, including the transfer of Nishino's construction (Proposition~\ref{prop:transfer}) and the scope of the axioms. Appendix~\ref{app:fock} proves the oscillator decomposition, Appendix~\ref{app:checks} describes numerical checks in explicit gamma matrices, and Appendix~\ref{app:tables} lists the symmetric squares for the families~\eqref{eq:families}. Figure~\ref{fig:proofmap} shows how the results depend on one another.
+The paper is organized as follows. Section~\ref{sec:spinors} collects what we need about spinors in signature $(s,t)$: the decomposition of the symmetric square of a Weyl spinor, which shows that the superalgebras of Ref.~\cite{RiosMarraniChester2019} are the most general ones and carry no information about dynamics, and two lemmas on isotropic subspaces. Section~\ref{sec:vector} proves the theorem on which everything else rests: if symmetric gamma matrices obey an identity of the type that absorption requires, the spinor dimension is $2(d-2)$. Section~\ref{sec:standard} applies it to ordinary super Yang--Mills theory. Section~\ref{sec:null} describes null frames by fermionic oscillators, states the axioms, and proves the reduction to ten residual dimensions and the Main Theorem. Section~\ref{sec:singletime} treats the single-time family by representation theory, and Sec.~\ref{sec:consequences} spells out what the results mean for $27+3$ and $19+3$, including the transfer of Nishino's construction (Proposition~\ref{prop:transfer}) and the scope of the axioms. Appendix~\ref{app:fock} proves the oscillator decomposition, Appendix~\ref{app:checks} describes numerical checks in explicit gamma matrices, Appendix~\ref{app:tables} lists the symmetric squares for the families~\eqref{eq:families}, and Appendix~\ref{app:transfer} checks Proposition~\ref{prop:transfer} in explicit gamma matrices. Figure~\ref{fig:proofmap} shows how the results depend on one another.
 
 \begin{figure}[t]
 \centering
@@ -588,35 +588,62 @@ In $27+3$ the Weyl spinor has $2^{14}=16\,384$ components, and its symmetric squ
 \subsection{The transfer of Nishino's construction}
 \label{ssec:transfer}
 
-The field-theoretic content proposed for these signatures is the claim of Ref.~\cite[Sec.~III.A]{RiosMarraniChester2019} that Nishino's existence proofs can be repeated after $4n$ timelike directions have been moved into space; Ref.~\cite{RiosMarraniChester2020} specifies the theory in $27+3$ by its superalgebra~(2.1) and its brane charges and gives no further transformation rules. Nishino treats the signatures $(11+4n)+(3+4n)$ in Sec.~4 of Ref.~\cite{Nishino1998}, with $4n+2$ real null vectors, his eqs.~(4.4)--(4.6), and the transfer keeps $D=14+8n$ and $s-t$ modulo eight and ends in $(11+8n)+3$; for $n=2$ it carries the theory in $19+11$ to $27+3$. We now write out what a repetition of his proof in the target signature has to contain, and show where it fails.
+The theories in $(11+8n)+3$ rest on one argument of Ref.~\cite[Sec.~III.A]{RiosMarraniChester2019}. Moving $4n$ timelike directions into space keeps $D=s+t$ and $s-t$ modulo eight, so the reality and symmetry properties of spinors and gamma matrices are unchanged, and the authors conclude that Nishino's existence proofs can be repeated in the new signatures.\footnote{Ref.~\cite[pp.~046004-4 and 046004-5]{RiosMarraniChester2019}: ``The simple but crucial observation is that, by switching $4n$ timelike dimensions into $4n$ spacelike dimensions in the above space-time signatures, one keeps $D$ and $\rho$ unchanged, and so all the properties of spinors and $\gamma$-matrices relevant for the definition of the above super-Poincar\'e algebras are left unchanged. Thus, one can check that the proofs given in [6] (see also [5]) for the existence of SYM's with superalgebras (3.1) and (3.2) can be successfully repeated to show the existence of SYM's based on global minimal, chiral (1,0) superalgebras in the following space-time signatures''. Here $\rho=s-t$ modulo eight, [6] is Ref.~\cite{Nishino1998} and [5] is Ref.~\cite{Sezgin1997}; the list that follows is eqs.~(3.5)--(3.8), and the third entry is $D=(11+8n)+3$ with the superalgebra~(3.7).} The paper on $27+3$ takes this theory as given: its superalgebra~(2.1) is~(3.7) at $n=2$,
+\begin{equation}
+\label{eq:rmc21}
+\{Q_\alpha,Q_\beta\}=(\gamma^{\mu\nu\rho})_{\alpha\beta}Z_{\mu\nu\rho}+(\gamma^{\mu_1\cdots\mu_7})_{\alpha\beta}Z_{\mu_1\cdots\mu_7}+(\gamma^{\mu_1\cdots\mu_{11}})_{\alpha\beta}Z_{\mu_1\cdots\mu_{11}}+(\gamma^{\mu_1\cdots\mu_{15}})_{\alpha\beta}Z_{\mu_1\cdots\mu_{15}},
+\end{equation}
+and it gives no transformation rules or field equations.\footnote{Ref.~\cite[p.~2]{RiosMarraniChester2020}: ``In $D=27+3$, the electric 11-brane has a multi-time worldvolume, with signature $11+3$, which can be used to provide a worldvolume realization for the $11+3$ SYM of Bars and Sezgin [7--9].'' Its footnote~2 reads: ``It should be recalled that the Bars-Sezgin SYM theories in $D>10$ are not Lorentz covariant, and so are the generalizations presented here.'' The lack of Lorentz covariance is the choice of the null vectors.} The quoted sentence names the proofs for~(3.1) and~(3.2), whose transfers are the first two families of~\eqref{eq:families}; for those, Sec.~\ref{sec:null} already shows that the repetition fails. The signatures $(11+8n)+3$ come from~(3.3), the superalgebra of Nishino's Section~4, which treats $(11+4n)+(3+4n)$. That section is the proof to be repeated, and we write it out.
+
+Nishino's coordinates in $(11+4n)+(3+4n)$ are $x^0,\dots,x^9,x^{11},\dots,x^{14+8n}$, with $x^0$ and $x^{12},x^{14},\dots,x^{14+8n}$ timelike~\cite[eq.~(4.2)]{Nishino1998}. His null vectors, eqs.~(4.5) and~(4.6), are
+\begin{equation}
+\label{eq:nishinoframe}
+n_{(i)}=\tfrac1{\sqrt2}\bigl(e_{9+2i}+e_{10+2i}\bigr),\qquad m_{(i)}=\tfrac1{\sqrt2}\bigl(e_{9+2i}-e_{10+2i}\bigr),\qquad i=1,\dots,4n+2,
+\end{equation}
+each pairing one spacelike with one timelike unit vector, so the $4n+2$ vectors $n_{(i)}$ use $4n+2$ different times. With $v=n_{(1)}\wedge\cdots\wedge n_{(4n+2)}$ his theory consists of
+\begin{align}
+&\delta A^I_\mu=\bar\epsilon\gamma_\mu\lambda^I,\qquad \delta\lambda^I=-\tfrac14\gamma^{\mu\nu[4n+2]}\epsilon\,F^I_{\mu\nu}v_{[4n+2]}, && \text{eq.~(4.3)}\label{eq:n43}\\
+&v^{[4n+1]}{}_\mu\gamma^\mu\lambda^I=0, && \text{eq.~(4.9)}\label{eq:n49}\\
+&D_\mu F^{\mu[\nu_1}{}^I v^{\nu_2\cdots\nu_{4n+3}]}=\tfrac{1}{2^{4n+2}(4n+3)!}f^{IJK}\bar\lambda^J\gamma^{\nu_1\cdots\nu_{4n+3}}\lambda^K, && \text{eq.~(4.12)}\label{eq:n412}\\
+&\{Q_\alpha,Q_\beta\}=(\gamma^{\mu[4n+2]})_{\alpha\beta}v_{[4n+2]}P_\mu, && \text{eq.~(4.15)}\label{eq:n415}
+\end{align}
+together with the closure~(4.13), (4.14), whose translation parameter is $\xi^\mu=-(\bar\epsilon_1\gamma^{\mu[4n+2]}\epsilon_2)v_{[4n+2]}$. Here $[p]$ denotes $p$ antisymmetrized indices. The right-hand side of~\eqref{eq:n412} is the source that absorbs the cubic gaugino terms, and~\eqref{eq:n415} shows where the momentum comes from: the $(4n+3)$-form charge contracted with $v$. Repeating the proof in $(11+8n)+3$ means keeping these equations and choosing a null frame in the new signature. Since the rank $4n+2$ may be too large there, we allow any rank $k$.
 
 \begin{proposition}
 \label{prop:transfer}
-Let $n\ge1$ and let $\ad$ be a compact non-abelian Lie algebra. In $\bR^{11+8n,3}$ consider a gauge field $A^I_\mu$, a Majorana--Weyl gaugino $\lambda^I$ and a Majorana--Weyl parameter $\epsilon$ of the same chirality, as in the chiral $(1,0)$ superalgebras~(3.7) of Ref.~\cite{RiosMarraniChester2019} and~(2.1) of Ref.~\cite{RiosMarraniChester2020}, a real null frame of rank $k$ with $v=n_1\wedge\cdots\wedge n_k$, and Nishino's equations~(4.3), (4.9) and (4.12)--(4.15) with his rank $4n+2$ replaced by $k$:
+Let $n\ge1$ and let $\ad$ be a compact non-abelian Lie algebra. In $\bR^{11+8n,3}$ consider a gauge field $A^I_\mu$, a Majorana--Weyl gaugino $\lambda^I$ and a Majorana--Weyl parameter $\epsilon$ of the same chirality, as in~(3.7) of Ref.~\cite{RiosMarraniChester2019} and~\eqref{eq:rmc21}, a real null frame of rank $k\ge0$ with $v=n_1\wedge\cdots\wedge n_k$, and Nishino's equations with $4n+2$ replaced by $k$:
 \begin{enumerate}[label=(\alph*)]
-\item $\delta A^I_\mu=\bar\epsilon\gamma_\mu\lambda^I$ and $\delta\lambda^I=-\frac14\gamma^{\mu\nu\rho_1\cdots\rho_k}\epsilon\,F^I_{\mu\nu}v_{\rho_1\cdots\rho_k}$;
-\item the constraint $v_{\rho_1\cdots\rho_{k-1}\mu}\gamma^\mu\lambda^I=0$;
-\item the commutator of two supersymmetries contains the translation by $\xi^\mu=-(\bar\epsilon_1\gamma^{\mu\rho_1\cdots\rho_k}\epsilon_2)v_{\rho_1\cdots\rho_k}$, the coefficient of $P_\mu$ in the anticommutator $\{Q_\alpha,Q_\beta\}=(\gamma^{\mu\rho_1\cdots\rho_k})_{\alpha\beta}v_{\rho_1\cdots\rho_k}P_\mu$, with residual components $\xi^{\mu'}$ that do not vanish identically;
-\item the terms quadratic in $\lambda$ in $\delta(\gamma^\mu D_\mu\lambda^I)$ are cancelled by a source $J\wedge v$ in the field equation of the gauge field, as in~(4.12).
+\item $\delta A^I_\mu=\bar\epsilon\gamma_\mu\lambda^I$ and $\delta\lambda^I=-\frac14\gamma^{\mu\nu\rho_1\cdots\rho_k}\epsilon\,F^I_{\mu\nu}v_{\rho_1\cdots\rho_k}$, as in~\eqref{eq:n43};
+\item $v_{\rho_1\cdots\rho_{k-1}\mu}\gamma^\mu\lambda^I=0$, as in~\eqref{eq:n49};
+\item the commutator of two supersymmetries contains the translation by $\xi^\mu=-(\bar\epsilon_1\gamma^{\mu\rho_1\cdots\rho_k}\epsilon_2)v_{\rho_1\cdots\rho_k}$, the coefficient of $P_\mu$ in $\{Q_\alpha,Q_\beta\}=(\gamma^{\mu\rho_1\cdots\rho_k})_{\alpha\beta}v_{\rho_1\cdots\rho_k}P_\mu$ as in~\eqref{eq:n415}, and its residual components $\xi^{\mu'}$ do not vanish identically;
+\item the terms quadratic in $\lambda$ in $\delta(\gamma^\mu D_\mu\lambda^I)$ are cancelled by a source $J\wedge v$ in the field equation of the gauge field, as in~\eqref{eq:n412}.
 \end{enumerate}
 Then:
 \begin{enumerate}[label=(\roman*)]
-\item $k\le3$. In particular Nishino's rank $4n+2$ cannot be kept.
-\item Condition~(c) can hold only for $k=2$.
-\item For $k=2$ conditions~(a)--(c) imply~\ref{ax:N1}--\ref{ax:N4}, and condition~(d) is~\ref{ax:N5}. The residual space is $\bR^{9+8n,1}$, and~(d) fails: absorption would force the identity~\eqref{eq:R} on the residual Weyl module, of dimension $N=2^{4+4n}$, while Theorem~\ref{thm:vector} requires $N=2(8+8n)=16+16n$.
+\item $k\le3$, so Nishino's rank $4n+2$ cannot be kept.
+\item Condition~(c) holds only for $k=2$.
+\item For $k=2$ conditions~(a)--(c) imply~\ref{ax:N1}--\ref{ax:N4}, condition~(d) is~\ref{ax:N5}, the residual space is $\bR^{9+8n,1}$, and~(d) fails: absorption would force the identity~\eqref{eq:R} on the residual Weyl module, of dimension $N=2^{4+4n}$, while Theorem~\ref{thm:vector} requires $N=2(8+8n)=16+16n$.
 \end{enumerate}
-Hence no field theory in $(11+8n)+3$, and in particular none in $27+3$ or $19+3$, satisfies Nishino's equations (a)--(d) for any rank of the null frame.
+Hence no field theory in $(11+8n)+3$, in particular none in $19+3$ or $27+3$, satisfies (a)--(d) for any rank of the null frame.
 \end{proposition}
 
 \begin{proof}
-The gaugino does not vanish identically, since otherwise $\delta A=0$ and nothing is supersymmetric. Under~(b), $\lambda^I$ is annihilated by every $\nsl_i$: contracting $v$ with $m_j$ for all $j\ne i$ turns~(b) into $\pm\nsl_i\lambda^I=0$, and conversely every contraction of $v$ with $\gamma^\mu$ is a combination of the $\nsl_i$. So the values of $\lambda^I$ are Majorana spinors in $K$, and Lemma~\ref{lem:reality} gives $k\le\min(11+8n,3)=3<4n+2$. This is (i).
+We write $D=14+8n=2r$, so $r=7+4n$, and use the oscillator notation of Sec.~\ref{sec:null}: $K$ is the joint kernel of the $\nsl_i$ and $\Khat$ the joint kernel of the $\msl_i$. The gaugino does not vanish identically, since otherwise $\delta A=0$ and no field transforms.
 
-(ii) Here $D=2r$ with $r=7+4n$, and by Proposition~\ref{prop:sym2} the anticommutator of two supercharges of one chirality lies in $\Sym^2\Delta_+=\bigoplus_j\Lambda^{r-4j}$, whose degrees are $3,7,\dots,7+4n$. The bilinear $\bar\epsilon_1\gamma^{\mu\rho_1\cdots\rho_k}\epsilon_2$ is the component of $\epsilon_1\otimes\epsilon_2$ in $\Lambda^{k+1}$. For $k+1$ even it vanishes on $\Delta_+\times\Delta_+$, and for $k+1\equiv1\pmod4$ it lies in $\Lambda^2\Delta_+$ and drops out of the anticommutator. So~(c) requires $k+1\equiv3\pmod4$, and with $k\le3$ this leaves $k=2$. Step~2 of the proof of Theorem~\ref{thm:reduction} gives the same result from the residual side: a residual translation needs $r'=r-k\equiv1\pmod4$.
+\emph{Step 1: the rank is at most three.} First, (b) says exactly that $\lambda^I$ takes values in $K$. Indeed $v_{\rho_1\cdots\rho_{k-1}\mu}\gamma^\mu$ is, for each choice of $\rho_1,\dots,\rho_{k-1}$, a linear combination of $\nsl_1,\dots,\nsl_k$, so $\nsl_i\lambda=0$ for all $i$ implies~(b). Conversely, contract~(b) with $m_j^{\rho}$ in the slots $\rho_1,\dots,\rho_{k-1}$ for all $j\ne i$; since $n_l\cdot m_j=\delta_{lj}$, only the term with $n_i$ in the last slot survives, and~(b) becomes a nonzero multiple of $\nsl_i\lambda^I=0$. Next, the $n_i$ are real, mutually orthogonal null vectors, linearly independent because $n_i\cdot m_j=\delta_{ij}$, so they span a real totally isotropic subspace of dimension $k$, and Lemma~\ref{lem:witt} gives $k\le\min(11+8n,3)=3$. Lemma~\ref{lem:reality} gives the same bound for any frame, real or complex, once the values of $\lambda$ are Majorana spinors. Nishino's rank is $4n+2\ge6$, which proves~(i). The same count holds in the source signature, where $\min(11+4n,3+4n)=3+4n\ge4n+2$ leaves room for his frame.
 
-(iii) Let $k=2$. Axiom~\ref{ax:N1} holds because~(b) says exactly that $\lambda^I$ takes values in $K$ and imposes nothing else, so its value space is the full corner $K_\chi$; $\epsilon$ is unconstrained. Axiom~\ref{ax:N2} is~(a), with $a=1$, $\Phi(F)\epsilon=-\frac14\gamma^{\mu\nu\rho_1\rho_2}\epsilon F_{\mu\nu}v_{\rho_1\rho_2}$, which is linear in $F$ and independent of $\lambda$, and $g\ne0$ because $\ad$ is non-abelian. For~\ref{ax:N3} and~\ref{ax:N4} we use Lemma~\ref{lem:fock}. Since $k$ is even and $\lambda$ and $\epsilon$ have the same chirality, $T\epsilon$ ranges over $K_\chi=\Sigma$, a Weyl module of $V'$. As $r$ is odd, $B$ pairs $\Delta_+$ with $\Delta_-$, so $\beta$ pairs $\Sigma$ nondegenerately with the opposite Weyl half $\Sigma_{\rm opp}$ of $\Delta_{\mathbf 1}$, and $\gamma^{\mu'}$ maps $\Sigma$ injectively into $\Sigma_{\rm opp}$. Therefore $\delta A^I_{\mu'}=\beta(T\epsilon,\gamma_{\mu'}\lambda^I)$ and $\xi^{\mu'}=\pm\beta(T\epsilon_2,\gamma^{\mu'}T\epsilon_1)$, as in~\eqref{eq:dAxi}, do not vanish identically. The pairing is symmetric because $r'=r-2\equiv1\pmod4$. Condition~(d) asserts that the quadratic terms have the form~\eqref{eq:absorb}, which is~\ref{ax:N5}. Theorem~\ref{thm:reduction} then gives $D'\in\{2,10\}$, whereas $D'=14+8n-4=10+8n$. Explicitly, Step~3 of its proof produces~\eqref{eq:R} on $\Sigma$, with $d=10+8n$ and $N=\dim\Sigma=2^{r'-1}=2^{4+4n}$; the contraction~\eqref{eq:contr2} fixes $j=-(8+8n)/2^{4+4n}$, and~\eqref{eq:contr1} then fails because $N=2(d-2)$ is false for $n\ge1$.
+\emph{Step 2: only rank two gives a translation.} By Proposition~\ref{prop:sym2}, the forms $\bar\epsilon_1\gamma^{\mu_1\cdots\mu_p}\epsilon_2$ on $\Delta_+\times\Delta_+$ vanish for even $p$, are symmetric in $\epsilon_1,\epsilon_2$ for $p\equiv r\equiv3\pmod4$, and antisymmetric for $p\equiv1\pmod4$. For $27+3$ the degrees are
+\[
+\text{symmetric: }3,7,11,15,\qquad\text{antisymmetric: }1,5,9,13,\qquad\text{zero: }0,2,4,\dots,14,
+\]
+and the symmetric ones are the charges of~\eqref{eq:rmc21}. The parameter $\xi^\mu$ of~(c) is the component of $\epsilon_1\otimes\epsilon_2$ in degree $k+1$. For $k=1$ and $k=3$ the degree is even and $\xi$ vanishes identically. For $k=0$ the degree is one, the form is antisymmetric, and the momentum is absent from the anticommutator; this is why, among the superalgebras (3.1)--(3.8) of Ref.~\cite{RiosMarraniChester2019}, only~(3.1) and~(3.5) contain $P_\mu$. For $k=2$ the degree is three and the form is symmetric. With $k\le3$ this leaves $k=2$, which proves~(ii). Nishino's rank $4n+2$ would draw the momentum from the $(4n+3)$-form charge, symmetric as well; in $27+3$ this is the eleven-form charge of the electric $11$-brane of Ref.~\cite{RiosMarraniChester2020}, which needs ten mutually orthogonal real null vectors, and by Step~1 there are at most three.
+
+\emph{Step 3: at rank two the axioms (N1)--(N4) hold.} Let $k=2$. Axiom~\ref{ax:N1} holds because~(b) says exactly that $\lambda^I$ takes values in $K$ and imposes nothing else, so its value space is the full corner $K_\chi$; $\epsilon$ is unconstrained, as in Nishino's construction. Axiom~\ref{ax:N2} is~(a), with $a=1$ and $\Phi(F)\epsilon=-\frac14\gamma^{\mu\nu\rho_1\rho_2}\epsilon F_{\mu\nu}v_{\rho_1\rho_2}$, which is linear in $F$ and independent of $\lambda$; $g\ne0$ because $\ad$ is non-abelian. For~\ref{ax:N3} and~\ref{ax:N4} we use Lemma~\ref{lem:fock}. Since $k$ is even and $\lambda$ and $\epsilon$ have the same chirality, $T\epsilon$ ranges over $K_\chi=:\Sigma$ as $\epsilon$ ranges over $\Khat_\chi$, and $\Sigma$ is a Weyl module of the residual space $V'=\bR^{9+8n,1}$, of dimension $2^{r-k-1}=2^{4+4n}$. As $r$ is odd, $B$ pairs $\Delta_+$ with $\Delta_-$, so $\beta$ of~\eqref{eq:beta} pairs $\Sigma$ nondegenerately with the opposite Weyl half $\Sigma_{\rm opp}$ of $\Delta_{\mathbf 1}$, and $\gamma^{\mu'}$ maps $\Sigma$ injectively into $\Sigma_{\rm opp}$. Therefore $\delta A^I_{\mu'}=\beta(T\epsilon,\gamma_{\mu'}\lambda^I)$ and $\xi^{\mu'}=\pm\beta(T\epsilon_2,\gamma^{\mu'}T\epsilon_1)$, as in~\eqref{eq:dAxi}, do not vanish identically, and the pairing in $\xi^{\mu'}$ is symmetric because $r'=r-2\equiv1\pmod4$. Condition~(d) asserts that the quadratic terms have the form~\eqref{eq:absorb}, which is~\ref{ax:N5}.
+
+\emph{Step 4: absorption fails.} Theorem~\ref{thm:reduction} now applies and gives $D'\in\{2,10\}$, whereas $D'=14+8n-4=10+8n$. Concretely, Steps~1--3 of its proof turn~(d) into the identity~\eqref{eq:R} on $\Sigma$ with $d=D'=10+8n$ and $N=2^{4+4n}$. The second contraction~\eqref{eq:contr2} fixes the constant, $j=-(d-2)/N=-(8+8n)/2^{4+4n}$, and the first contraction~\eqref{eq:contr1} then requires $N=2(d-2)$, which is false for every $n\ge1$ because $2^{4+4n}=16^{n+1}>16(n+1)$ for $n\ge1$. This proves~(iii).
 \end{proof}
 
-Table~\ref{tab:transfer} lists the two cases singled out in Refs.~\cite{RiosMarraniChester2019,RiosMarraniChester2020}. For $27+3$ the contraction~\eqref{eq:contr2} gives $j=-3/512$, and~\eqref{eq:contr1} would then require $4096-24=-2j\cdot24$, that is $4072=9/32$. In Nishino's signatures the same count gives $N=16=2(10-2)$, because his frame has rank $t-1$ and leaves the residual space $\bR^{9,1}$. At rank two the translations of~(c) come from the three-form charge of eq.~(2.1) of Ref.~\cite{RiosMarraniChester2020} contracted with $v$, while Nishino's rank ten would draw them from the eleven-form charge, the electric $11$-brane of that reference, which needs ten mutually orthogonal real null vectors.
+For $27+3$ the numbers are $D'=26$, $N=4096$ and $j=-24/4096=-3/512$, and~\eqref{eq:contr1} would require $4096-24=-2j\cdot24$, that is $4072=9/32$. In Nishino's own signatures the same count gives $N=16=2(10-2)$, because his frame has rank $t-1$ and leaves the residual space $\bR^{9,1}$. Compare Sezgin's theory: in $11+3$ a rank-two frame leaves ten residual dimensions and everything closes; in $27+3$ the same rank, the only one the translation bracket allows, leaves twenty-six. Table~\ref{tab:transfer} and Figs.~\ref{fig:transfer} and~\ref{fig:transfercount} collect the two cases singled out in Refs.~\cite{RiosMarraniChester2019,RiosMarraniChester2020}, and Appendix~\ref{app:transfer} checks each step in explicit gamma matrices of size $2^{15}$.
 
 \begin{table}[htbp]
 \centering
@@ -632,9 +659,23 @@ $(27,3)$ & $(19,11)$ & 10 & 3 & 2 & 26 & 4\,096 & 48\\
 \label{tab:transfer}
 \end{table}
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{figures/fig_transfer.pdf}
+\caption{The transfer in the space of signatures and ranks $(s,t,k)$. Blue: Nishino's real frames of rank $4n+2$ in $(11+4n)+(3+4n)$ for $n=0,1,2$, all below the wall $k=\min(s,t)$ (grey). Dashed: moving $4n$ times into space. Red circles: the same ranks in $(11+8n)+3$, above the wall, since a real frame there has at most three null vectors. Green stars: the rank $k=2$, the only one compatible with the translation bracket; at $n=0$ it is Sezgin's theory in $11+3$.}
+\label{fig:transfer}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{figures/fig_transfercount.pdf}
+\caption{At rank two in $(11+8n)+3$, the dimension $N=2^{4+4n}$ of the residual Weyl module (red) against the dimension $2(D'-2)=16+16n$ that absorption of the cubic terms requires by Theorem~\ref{thm:vector} (blue), on a logarithmic scale. They agree only for $11+3$, Sezgin's theory.}
+\label{fig:transfercount}
+\end{figure}
+
 \begin{remark}
 \label{rem:transfercomplex}
-The transfer becomes consistent only by giving up the reality of the gaugino. The complexified Clifford algebra of $\bR^{s,t}$ depends only on $D$, so Nishino's equations in $19+11$ can be written with a complex null frame of rank $10$ in $\bC^{30}$ and read in the coordinates of $\bR^{27,3}$. The residual space is then ten-dimensional and the absorption holds, as in Remark~\ref{rem:complex}. But the frame spans a complex totally isotropic subspace of dimension $10>3$, so by Lemma~\ref{lem:reality} its occupied corner contains no nonzero Majorana spinor: the gaugino, and through $\delta A=\bar\epsilon\gamma\lambda$ the gauge field, are complex. These are the complexified equations of the theory in $19+11$, whose real form there carries a real frame. The data that Ref.~\cite{RiosMarraniChester2019} keeps fixed, $D$ and $s-t$ modulo eight, fix the complex Clifford algebra and the reality type of its spinors, but not the Witt index $\min(s,t)$ that a real null frame needs.
+The transfer becomes consistent only by giving up the reality of the gaugino. The complexified Clifford algebra of $\bR^{s,t}$ depends only on $D$, so Nishino's equations in $19+11$ can be written with a complex null frame of rank $10$ in $\bC^{30}$ and read in the coordinates of $\bR^{27,3}$. The residual space is then ten-dimensional and the absorption holds, as in Remark~\ref{rem:complex}. But the frame spans a complex totally isotropic subspace of dimension $10>3$, so by Lemma~\ref{lem:reality} its occupied corner contains no nonzero Majorana spinor: the gaugino, and through $\delta A=\bar\epsilon\gamma\lambda$ the gauge field, are complex. These are the complexified equations of the theory in $19+11$, whose real form there carries a real frame. The data that Ref.~\cite{RiosMarraniChester2019} keeps fixed, $D$ and $s-t$ modulo eight, fix the complex Clifford algebra and the reality type of its spinors, but not the Witt index $\min(s,t)$ that a real null frame needs.\footnote{The annihilator of a spinor is a totally isotropic subspace; spinors whose annihilator has the largest possible dimension are Cartan's pure spinors~\cite{Chevalley1954,BudinichTrautman1988}. Lemma~\ref{lem:reality} adds that for a Majorana spinor this subspace is the complexification of a real one.}
 \end{remark}
 
 \subsection{Scope}
@@ -656,7 +697,7 @@ Supersymmetric Yang--Mills theories built with null projections in signatures wi
 
 \section*{Data availability}
 
-The general results are proved in the text; numerical samples are supplementary. The plotted and tabulated residuals retain the archived reference run. A fresh run of all 34 checks on 24 October 2026 also passed; its output and library versions are included in the submission supplement. The second version of this manuscript is archived at~\cite{Paper4Revision}. The complete \LaTeX{} source of this version, the numerical programs and the verification logs are available in the versioned repository~\cite{Paper4Release}; the earlier source and reference data are archived at~\cite{BhattacharjeeArchive2026}. The schematics of Figs.~\ref{fig:proofmap} and~\ref{fig:cube} are drawn in the \LaTeX{} source with TikZ.
+The general results are proved in the text; numerical samples are supplementary. The plotted and tabulated residuals of Appendix~\ref{app:checks} retain the archived reference run of the $34$ checks of \texttt{verify.py}, which a fresh run on 24 October 2026 reproduced. The $24$ checks of Appendix~\ref{app:transfer} and the drawing of Figs.~\ref{fig:transfer} and~\ref{fig:transfercount} are new in this version. The second version of this manuscript is archived at~\cite{Paper4Revision}. The complete \LaTeX{} source of this version, the numerical programs and the verification logs are available in the versioned repository~\cite{Paper4Release}; the earlier source and reference data are archived at~\cite{BhattacharjeeArchive2026}. The schematics of Figs.~\ref{fig:proofmap} and~\ref{fig:cube} are drawn in the \LaTeX{} source with TikZ.
 
 \section*{Funding}
 
@@ -765,6 +806,38 @@ $(28,4)$ & 32 & 32\,768 & 16, 12, 8, 4, 0 & 536\,887\,296 & 24\\
 \end{tabular}\end{adjustbox}
 \caption{Symmetric squares of the Weyl spinor for the families~\eqref{eq:families}, $n=0,1,2$. The last column is $s-t=s+t-2\min(s,t)$, the residual dimension of a real null frame of rank $k=t$. For $n=0$ Nishino's frames have $k=t-1$ and $D'=10$; a frame with $k=t$ gives $D'=8$, which Theorem~\ref{thm:reduction} excludes. For $n\ge1$ every admissible frame has $D'\ge16$.}
 \label{tab:sym2}
+\end{table}
+
+\FloatBarrier
+
+\section{The transfer in explicit gamma matrices}
+\label{app:transfer}
+
+The program \texttt{transfer\_check.py} in the repository checks Proposition~\ref{prop:transfer} in the gamma matrices of Appendix~\ref{app:checks}, which in thirty dimensions have size $2^{15}=32\,768$. Real frames pair the $i$-th timelike generator with a spacelike one, $\nsl_i=(\gamma_{\rm space}+\gamma_{\rm time})/\sqrt2$, as in Nishino's eqs.~(4.5) and~(4.6). Dimensions of corners are traces of the projections $\prod_i\Pup_i$ restricted to a chirality, so they are exact integers. For the cubic terms we take $x=T\epsilon$ with a random $\epsilon\in\Khat_+$, use the residual pairing $G^{\mu'}(T\epsilon,T\epsilon')=B(\epsilon,\gamma^{\mu'}T\epsilon')$ of Step~2 of the proof of Theorem~\ref{thm:reduction}, and evaluate $Y=\sum_{\mu'}\eta_{\mu'\mu'}G^{\mu'}(x,x)\gamma^{\mu'}x$, which vanishes for every $x$ exactly when the identity~\eqref{eq:star} holds; the identity~\eqref{eq:R} is tested with $j$ fitted by least squares. Sezgin's $11+3$ and Nishino's source signature $19+11$ serve as controls. All $24$ checks pass; Table~\ref{tab:transfercheck} lists them. They confirm the written proof and do not replace it.
+
+\begin{table}[htbp]
+\centering
+\begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}lll@{}}
+\toprule
+signature & check & result\\
+\midrule
+all four & Clifford relations, spinor dimension $2^{D/2}$ & hold\\
+$(27,3)$, $(19,11)$ & degrees symmetric on $\Delta_+\times\Delta_+$ & $3,7,11,15$; antisymmetric $1,5,9,13$; even degrees zero\\
+$(19,3)$ & degrees symmetric on $\Delta_+\times\Delta_+$ & $3,7,11$; antisymmetric $1,5,9$; even degrees zero\\
+$(27,3)$, $(19,3)$ & translation bracket for real frames of rank $1$ and $3$ & vanishes identically\\
+$(27,3)$, $k=3$ & real frame, $\dim K_+$, $D'$ & exists; $2\,048$; $24$\\
+$(27,3)$, $k=2$ & real frame, $\dim K_+$, $D'$ & exists; $4\,096$; $26$\\
+$(27,3)$, $k=2$ & $\delta A_{\mu'}$, $\xi^{\mu'}$ nonzero, $\xi$ symmetric & yes (asymmetry $8\times10^{-16}$)\\
+$(27,3)$, $k=2$ & identity~\eqref{eq:star}; identity~\eqref{eq:R} for some $j$ & fail ($|Y|$ relative $0.11$; residual $0.999$)\\
+$(19,3)$, $k=2$ & $\dim K_+$, $D'$; $\delta A_{\mu'}$, $\xi^{\mu'}$ & $256$, $18$; nonzero, symmetric\\
+$(19,3)$, $k=2$ & identity~\eqref{eq:star}; identity~\eqref{eq:R} for some $j$ & fail ($|Y|$ relative $0.38$; residual $0.99$)\\
+$(27,3)$, complex $k=10$ & $B\bar\nsl_iB^{-1}=\msl_i$; Majorana spinors in the corner & yes; none (corner of dimension $32$)\\
+$(11,3)$, $k=2$ & $\dim K_+$, $D'$; identities~\eqref{eq:star},~\eqref{eq:R} & $16$, $10$; hold, $j=-0.5000$\\
+$(19,11)$, $k=10$ & $\dim K_+$, $D'$; identities~\eqref{eq:star},~\eqref{eq:R} & $16$, $10$; hold, $j=-0.5000$\\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\caption{Checks of Proposition~\ref{prop:transfer} in explicit gamma matrices. Relative errors of the identities that hold are below $3\times10^{-14}$.}
+\label{tab:transfercheck}
 \end{table}
 
 \FloatBarrier
