@@ -1,8 +1,8 @@
 {
   "title": "Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories — submission package",
   "upload_type": "software",
-  "version": "1.3.0",
-  "description": "<p>Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories. Version 1.3.0 adds the folder hexagon-v2: the replacement version of the Hexagon preprint in the amsart single-column layout (NullProjectedSYM_v2.pdf, 22 pages, its TeX ZIP and arXiv tarball, the Hexagon portal fields and the AI provenance file), with the same mathematics, abstract and AI declaration as the Annals of Physics package. The reviewed folder Paper_4 package contains the article PDF, a minimal compilable TeX ZIP, AI provenance, Hexagon fields, journal details, an unsent cover letter with editable source, and an author-prepared AI disclosure. All PDFs have no row or margin line numbers. No journal submission or acceptance is claimed.</p><p>The paper proves necessary residual-dimension and signature conditions for null-projected supersymmetric Yang-Mills constructions under five explicit axioms. It also gives a separate unitary helicity-span obstruction. It does not assert existence in every allowed signature or a nonperturbative quantum construction.</p><p>Verification scope: No general Lean formalisation is claimed. The proof is written in the manuscript; the gamma-matrix calculations are supplementary finite numerical checks.</p><p>Original preprint: https://hexagonmath.org/2610.00471v1. Earlier manuscript/source DOI: 10.5281/zenodo.23611588. Original attribution and component licences are preserved. Human-understanding and mixed-text declarations record the submitting author's explicit statement on 25 October 2026. The standalone AI declaration is author-prepared, not an official signed publisher form.</p>",
+  "version": "1.4.0",
+  "description": "<p>Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories. Version 1.4.0 adds the folder hexagon-v3: the third version of the Hexagon preprint (NullProjectedSYM_v3.pdf, 24 pages, its TeX ZIP, unpacked source and arXiv tarball, the Hexagon portal fields and the AI provenance file). The new Proposition 7.1 shows that the transfer of Nishino's construction to the signatures (11+8n)+3 proposed by Rios, Marrani and Chester fails for every rank of a real null frame; in 27+3 a real frame has at most three null vectors against Nishino's ten, the translation bracket allows only two, and with two the residual spinors have 4096 components where absorption of the cubic gaugino terms needs 48. Remark 7.2 treats complex frames and Remark 7.3 states what the five axioms do and do not decide. Earlier packages (hexagon-v2, Paper_4 package, PRD, Annals-of-Physics) are kept.</p><p>The paper proves necessary residual-dimension and signature conditions for null-projected supersymmetric Yang-Mills constructions under five explicit axioms. It also gives a separate unitary helicity-span obstruction. It does not assert existence in every allowed signature or a nonperturbative quantum construction, and it does not decide theories outside the five axioms.</p><p>Verification scope: No general Lean formalisation is claimed. The proof is written in the manuscript; the gamma-matrix calculations are supplementary finite numerical checks.</p><p>Earlier preprint versions: https://hexagonmath.org/2610.00471v1 and https://hexagonmath.org/2610.00471v2. Second-version package DOI: 10.5281/zenodo.23672585. Original attribution and component licences are preserved.</p>",
   "creators": [
     {
       "name": "Bhattacharjee, Deep",
@@ -23,12 +23,17 @@
       "relation": "isSupplementTo"
     },
     {
-      "identifier": "10.5281/zenodo.23629626",
+      "identifier": "https://hexagonmath.org/2610.00471v2",
+      "scheme": "url",
+      "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "10.5281/zenodo.23672585",
       "scheme": "doi",
       "relation": "isNewVersionOf"
     }
   ],
-  "publication_date": "2026-10-26",
+  "publication_date": "2026-10-28",
   "keywords": [
     "supersymmetric Yang-Mills theory",
     "null projection",

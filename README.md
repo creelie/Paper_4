@@ -1,5 +1,9 @@
 # Paper_4 — direct journal submission package
 
+## Hexagon v3 package
+
+[hexagon-v3](hexagon-v3/) holds the third version, replacing https://hexagonmath.org/2610.00471v2: `NullProjectedSYM_v3-tex.zip` (upload this; main.tex, pdfLaTeX), `NullProjectedSYM_v3.pdf` (24 pages), `NullProjectedSYM_v3-arxiv.tar.gz`, `HEXAGON_FORM.md`, `AI_PROVENANCE.md`, and the unpacked source in `source/`. It adds Proposition 7.1: the transfer of Nishino's construction to (11+8n)+3 proposed by Rios, Marrani and Chester (Phys. Rev. D 99 (2019) 046004, Sec. III.A) fails for every rank of a real null frame; in 27+3 a real frame has at most three null vectors against Nishino's ten, the translation bracket allows only two, and with two the residual spinors have 4096 components where absorption of the cubic terms needs 48. Remark 7.2 treats complex frames (they force a complex gaugino) and Remark 7.3 states what the axioms N1-N5 do and do not decide. Version: 1.4.0.
+
 ## Hexagon v2 package (amsart, single column)
 
 [hexagon-v2](hexagon-v2/) holds the replacement version of https://hexagonmath.org/2610.00471v1 in the amsart single-column layout: `NullProjectedSYM_v2-tex.zip` (upload this; main.tex, pdfLaTeX), `NullProjectedSYM_v2.pdf` (22 pages, the reference build), `NullProjectedSYM_v2-arxiv.tar.gz`, `HEXAGON_FORM.md` (portal fields) and `AI_PROVENANCE.md` (for Hexagon's separate provenance field). The mathematics, abstract and AI declaration are those of the Annals of Physics package below; only the layout changed. The source compiles on TeX Live 2026 with `pdflatex -jobname=output main.tex` with no errors and no bad boxes. Version: 1.3.0, release https://github.com/creelie/Paper_4/releases/tag/v1.3.0, package DOI: [10.5281/zenodo.23672585](https://doi.org/10.5281/zenodo.23672585).
