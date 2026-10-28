@@ -2,7 +2,7 @@
 
 Author and submitting contributor: Deep Bhattacharjee, ORCID 0000-0003-0466-750X.
 Earlier versions: https://hexagonmath.org/2610.00471v1, https://hexagonmath.org/2610.00471v2
-Source: https://github.com/creelie/Paper_4 (release v1.6.0, with the corrected statement of Proposition 7.1; programs and logs also in release v1.5.0, https://doi.org/10.5281/zenodo.23744833)
+Source: https://github.com/creelie/Paper_4 (release v1.6.0, https://doi.org/10.5281/zenodo.23746593, with the corrected statement of Proposition 7.1; programs and logs also in release v1.5.0, https://doi.org/10.5281/zenodo.23744833)
 
 ## Declarations
 
