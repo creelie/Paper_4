@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Cite the manuscript DOI and this versioned verification archive."
 type: software
 title: "Verification files for residual-dimension obstructions in null-projected SYM"
-version: 1.5.0
+version: 1.6.0
 date-released: 2026-10-28
 license: MIT
 repository-code: "https://github.com/creelie/Paper_4"
