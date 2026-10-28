@@ -1,0 +1,26 @@
+[PASS] Clifford relations in (11,3), spinor dimension 128
+[PASS] Clifford relations in (19,3), spinor dimension 2048
+[PASS] Clifford relations in (27,3), spinor dimension 32768
+[PASS] Clifford relations in (19,11), spinor dimension 32768
+[PASS] (27,3): degrees symmetric on Delta+ x Delta+ = [3, 7, 11, 15]; antisymmetric = [1, 5, 9, 13]; zero = even degrees
+[PASS] (27,3): rank-2 real frame, n.n = m.m = 0, n_i.m_j = delta_ij; dim K_+ = 4096 = 2^12; residual D' = 26
+[PASS] (27,3): delta A along V' and the translation xi^mu' do not vanish; xi symmetric in eps1, eps2  (max|dA|=3.14e+02, max|xi|=6.30e+02, asym=8.1e-16)
+[PASS] (27,3): residual Weyl module N = 4096, 2(D'-2) = 48; cubic identity holds = False; identity (R) holds for some j = False  (|Y| rel 1.12e-01, R residual 9.99e-01)
+[PASS] (27,3): rank-3 real frame, n.n = m.m = 0, n_i.m_j = delta_ij; dim K_+ = 2048 = 2^11; residual D' = 24
+[PASS] (27,3): the translation bracket vanishes identically for k = 1 and k = 3  (max|xi| = 0.0e+00)
+[PASS] (27,3): complex rank-10 frame, B conj(n_i) B^-1 = m_i; occupied corner of complex dimension 32 contains 0 independent Majorana spinors  (smallest singular value 1.41e+00)
+[PASS] (19,3): degrees symmetric on Delta+ x Delta+ = [3, 7, 11]; antisymmetric = [1, 5, 9]; zero = even degrees
+[PASS] (19,3): rank-2 real frame, n.n = m.m = 0, n_i.m_j = delta_ij; dim K_+ = 256 = 2^8; residual D' = 18
+[PASS] (19,3): delta A along V' and the translation xi^mu' do not vanish; xi symmetric in eps1, eps2  (max|dA|=6.94e+01, max|xi|=9.98e+01, asym=5.7e-16)
+[PASS] (19,3): residual Weyl module N = 256, 2(D'-2) = 32; cubic identity holds = False; identity (R) holds for some j = False  (|Y| rel 3.76e-01, R residual 9.89e-01)
+[PASS] (19,3): the translation bracket vanishes identically for k = 1 and k = 3  (max|xi| = 0.0e+00)
+[PASS] (11,3): degrees symmetric on Delta+ x Delta+ = [3, 7]; antisymmetric = [1, 5]; zero = even degrees
+[PASS] (11,3) [Sezgin]: rank-2 real frame, n.n = m.m = 0, n_i.m_j = delta_ij; dim K_+ = 16 = 2^4; residual D' = 10
+[PASS] (11,3) [Sezgin]: delta A along V' and the translation xi^mu' do not vanish; xi symmetric in eps1, eps2  (max|dA|=1.61e+01, max|xi|=2.43e+01, asym=2.3e-16)
+[PASS] (11,3) [Sezgin]: residual Weyl module N = 16, 2(D'-2) = 16; cubic identity holds = True; identity (R) holds for some j = True (j = -0.5000)  (|Y| rel 1.83e-16, R residual 3.29e-16)
+[PASS] (19,11): degrees symmetric on Delta+ x Delta+ = [3, 7, 11, 15]; antisymmetric = [1, 5, 9, 13]; zero = even degrees
+[PASS] (19,11) [Nishino n=2]: rank-10 real frame, n.n = m.m = 0, n_i.m_j = delta_ij; dim K_+ = 16 = 2^4; residual D' = 10
+[PASS] (19,11) [Nishino n=2]: delta A along V' and the translation xi^mu' do not vanish; xi symmetric in eps1, eps2  (max|dA|=1.61e+01, max|xi|=3.72e+02, asym=2.9e-15)
+[PASS] (19,11) [Nishino n=2]: residual Weyl module N = 16, 2(D'-2) = 16; cubic identity holds = True; identity (R) holds for some j = True (j = -0.5000)  (|Y| rel 6.81e-15, R residual 2.12e-14)
+
+24 checks passed, 0 failed
