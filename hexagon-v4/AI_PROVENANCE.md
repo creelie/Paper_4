@@ -2,7 +2,7 @@
 
 Author and submitting contributor: Deep Bhattacharjee, ORCID 0000-0003-0466-750X.
 Earlier versions: https://hexagonmath.org/2610.00471v1, https://hexagonmath.org/2610.00471v2, https://hexagonmath.org/2610.00471v3
-Source: https://github.com/creelie/Paper_4 (release v2.0.0, https://doi.org/10.5281/zenodo.23787988; all releases under the concept record https://doi.org/10.5281/zenodo.23612780; the third version is release v1.6.0, https://doi.org/10.5281/zenodo.23746593)
+Source: https://github.com/creelie/Paper_4 (release v2.1.0; release v2.0.0, an earlier package of this version, is https://doi.org/10.5281/zenodo.23787988; all releases under the concept record https://doi.org/10.5281/zenodo.23612780; the third version is release v1.6.0, https://doi.org/10.5281/zenodo.23746593)
 
 ## Declarations
 
@@ -70,9 +70,17 @@ editing.
   reality argument) with Corollary 5.13, and Theorem 7.3 (no fixed tensor u in a source
   J ^ u absorbs the cubic terms once the residual dimension exceeds 14, without (N4) and
   with or without a gaugino constraint) with Corollary 7.4; Appendix E, the program
-  contraction_check.py, Figures 7 and 11 and their generator make_v4_figures.py; and the
-  corresponding changes to the abstract, introduction, Section 7.3, Remark 7.5, the
-  conclusions and the proof map.
+  contraction_check.py, Figures 7 and 11 and their generator make_v4_figures.py.
+- After the author asked to close the two questions that this version had left open,
+  Claude Code proposed and drafted, with the author, Theorem 5.14 (Nishino's
+  transformations give theories with residual dimension two in every (k+1)+(k+1), with
+  vanishing cubic terms and off-shell closure) with Corollary 5.15 (the Main Theorem is a
+  classification), Proposition 7.5 (several gauginos with their own parameters are
+  impossible for residual dimension at least three) and Remark 7.6 (why no statement about
+  the superalgebra alone can exclude every theory); Appendix F and the program
+  residual_two_check.py; and, at the author's request, a shorter abstract that states the
+  classification. The corresponding changes were made to the introduction, Section 7.4,
+  Remark 7.7, the conclusions and the proof map.
 - Claude Code identified the citations of unrefereed preprints (Truini-Marrani-Rios,
   arXiv:1909.00357; Banerjee, arXiv:2401.13706; two self-archived Zenodo copies of
   earlier versions), replaced the first by its published version (Expo. Math. 43 (2025)
@@ -97,8 +105,15 @@ editing.
   contraction_check.py, 32 checks passed, 0 failed (absorption for arbitrary
   contractions, and the axioms in 9+1, 5+5, 1+9, 7+7, 2+10, 3+11 and 9+9 with residual
   dimension ten).
+- Theorem 5.14 and Proposition 7.5 were re-derived by hand: the reduction of Phi(F) epsilon
+  to c F(l+, l-) T epsilon, the vanishing of the cubic terms because gamma(l+) annihilates
+  the gaugino space, the two commutators 2abc theta2 theta1 D_{l+} lambda and
+  2abc theta2 theta1 F(l+, l-), and the invariant subspace W in Proposition 7.5;
+  residual_two_check.py, 50 checks passed, 0 failed (the axioms and off-shell closure in
+  1+1, 2+2, 3+3 and 4+4, Nishino's theories in 9+1 and 10+2 as controls, and nonzero
+  cross terms of two gauginos for residual dimensions 4, 6, 8 and 10).
 - Build: pdflatex -jobname=output main.tex, three passes, 0 errors, 0 overfull or
-  underfull boxes, no undefined references; 31 pages. Every page was rendered and read.
+  underfull boxes, no undefined references; 36 pages. Every page was rendered and read.
 - References: all 40 DOIs resolve to the cited works (39 in Crossref, the Zenodo concept
   record in DataCite); all 21 arXiv identifiers match their titles and authors, and each
   of them belongs to a published work. Not verified online: Deligne, "Notes on spinors" (1999),

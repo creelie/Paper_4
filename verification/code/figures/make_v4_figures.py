@@ -1,4 +1,5 @@
-"""Figures of the fourth version: fig_sharp (Theorem 5.12) and fig_sources (Theorem 7.3).
+"""Figures fig_sharp (Theorems on sufficiency for residual dimension ten and two) and
+fig_sources (Theorem on arbitrary contractions of the source).
 
 Run from any directory; --output-dir selects the destination (default: generated-figures
 next to the verification folder).
@@ -19,7 +20,7 @@ parser.add_argument("--output-dir", type=Path,
 OUT = str(parser.parse_args().output_dir)
 os.makedirs(OUT, exist_ok=True)
 plt.rcParams.update({"font.family": "serif", "font.size": 10, "mathtext.fontset": "cm"})
-BLUE, RED, GREY, GREEN, ORANGE = "#2b5d9b", "#b8312f", "#7f7f7f", "#2e8b57", "#d9822b"
+BLUE, RED, GREY, GREEN, ORANGE, PURPLE = "#2b5d9b", "#b8312f", "#7f7f7f", "#2e8b57", "#d9822b", "#7b4fa0"
 
 
 def save(fig, name):
@@ -29,7 +30,8 @@ def save(fig, name):
 
 
 def fig_sharp():
-    """(s,t,k) with s+t-2k=10: Nishino's line and the lines reached by complex isometries."""
+    """(s,t,k) carrying a theory: s+t-2k=10 (Nishino's line and the lines reached by complex
+    isometries) and s+t-2k=2 with s=t."""
     fig = plt.figure(figsize=(6.6, 5.4))
     ax = fig.add_subplot(111, projection="3d")
     kmax = 10
@@ -49,6 +51,9 @@ def fig_sharp():
     ax.plot(1 + k, 9 + k, k, color=GREEN, lw=1.2, ls="--")
     ax.scatter(1 + k, 9 + k, k, color=GREEN, s=22, marker="s", depthshade=False,
                label=r"$(1+k)+(9+k)$")
+    ax.plot(1 + k, 1 + k, k, color=PURPLE, lw=1.2)
+    ax.scatter(1 + k, 1 + k, k, color=PURPLE, s=22, marker="^", depthshade=False,
+               label=r"$D'=2$: $(1+k)+(1+k)$")
     ax.scatter([9, 9], [9, 17], [4, 8], color=GREEN, s=95, edgecolor="black",
                linewidth=0.8, depthshade=False, label=r"$9+9$, $9+17$")
     for n in (0, 1, 2):
@@ -66,7 +71,7 @@ def fig_sharp():
     ax.set_zlim(0, kmax)
     ax.view_init(elev=22, azim=-58)
     ax.legend(loc="upper left", fontsize=8, frameon=False)
-    ax.text2D(0.06, 0.62, r"plane $s+t-2k=10$", color=BLUE, fontsize=9,
+    ax.text2D(0.60, 0.86, r"plane $s+t-2k=10$", color=BLUE, fontsize=9,
               transform=ax.transAxes)
     save(fig, "fig_sharp")
 
