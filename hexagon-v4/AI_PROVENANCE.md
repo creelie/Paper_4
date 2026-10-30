@@ -2,7 +2,7 @@
 
 Author and submitting contributor: Deep Bhattacharjee, ORCID 0000-0003-0466-750X.
 Earlier versions: https://hexagonmath.org/2610.00471v1, https://hexagonmath.org/2610.00471v2, https://hexagonmath.org/2610.00471v3
-Source: https://github.com/creelie/Paper_4 (release v2.1.0, https://doi.org/10.5281/zenodo.23788708; release v2.0.0, an earlier package of this version, is https://doi.org/10.5281/zenodo.23787988; all releases under the concept record https://doi.org/10.5281/zenodo.23612780; the third version is release v1.6.0, https://doi.org/10.5281/zenodo.23746593)
+Source: https://github.com/creelie/Paper_4 (release v2.1.1; release v2.1.0, the same mathematics, is https://doi.org/10.5281/zenodo.23788708; release v2.0.0, an earlier package of this version, is https://doi.org/10.5281/zenodo.23787988; all releases under the concept record https://doi.org/10.5281/zenodo.23612780; the third version is release v1.6.0, https://doi.org/10.5281/zenodo.23746593)
 
 ## Declarations
 
@@ -113,7 +113,7 @@ editing.
   1+1, 2+2, 3+3 and 4+4, Nishino's theories in 9+1 and 10+2 as controls, and nonzero
   cross terms of two gauginos for residual dimensions 4, 6, 8 and 10).
 - Build: pdflatex -jobname=output main.tex, three passes, 0 errors, 0 overfull or
-  underfull boxes, no undefined references; 36 pages. Every page was rendered and read.
+  underfull boxes, no undefined references; 35 pages. Every page was rendered and read.
 - References: all 40 DOIs resolve to the cited works (39 in Crossref, the Zenodo concept
   record in DataCite); all 21 arXiv identifiers match their titles and authors, and each
   of them belongs to a published work. Not verified online: Deligne, "Notes on spinors" (1999),
