@@ -56,7 +56,7 @@ Leave blank; no proof-assistant development is claimed.
 ## Files and licence
 
 Required source ZIP: NullProjectedSYM_v4-tex.zip
-Reference PDF: NullProjectedSYM_v4.pdf (36 pages)
+Reference PDF: NullProjectedSYM_v4.pdf (35 pages)
 AI provenance upload: AI_PROVENANCE.md (outside the source ZIP)
 Licence: CC BY 4.0, as for the existing record.
 The ZIP holds main.tex, preamble.tex, abstract.tex, body.tex, bib.tex, nine figure PDFs in figures/, and the five Python programs in anc/ (clifford.py, verify.py, transfer_check.py, contraction_check.py, residual_two_check.py). No directory entries, no empty files, no .md, .sh or .pdf copies of the paper. The bibliography is inline.
@@ -65,4 +65,4 @@ The ZIP holds main.tex, preamble.tex, abstract.tex, body.tex, bib.tex, nine figu
 
 Main document main.tex, pdfLaTeX: pdflatex -jobname=output main.tex, three passes. The extracted ZIP builds with 0 errors, 0 overfull or underfull boxes and no undefined references. Confirm the rendered title, abstract, byline and references in the portal preview.
 
-Source, programs and logs: https://github.com/creelie/Paper_4, release v2.1.0, archived as https://doi.org/10.5281/zenodo.23788708 (release v2.0.0, an earlier package of this version, is https://doi.org/10.5281/zenodo.23787988); all versions under the concept record https://doi.org/10.5281/zenodo.23612780. The third version is release v1.6.0, https://doi.org/10.5281/zenodo.23746593.
+Source, programs and logs: https://github.com/creelie/Paper_4, release v2.1.1 (the same mathematics as release v2.1.0, https://doi.org/10.5281/zenodo.23788708; release v2.0.0, an earlier package of this version, is https://doi.org/10.5281/zenodo.23787988); all versions under the concept record https://doi.org/10.5281/zenodo.23612780. The third version is release v1.6.0, https://doi.org/10.5281/zenodo.23746593.
