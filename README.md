@@ -1,5 +1,9 @@
 # Paper_4 — direct journal submission package
 
+## Journal version
+
+[journal](journal/) holds the version for journal submission: `NullProjectedSYM_journal.pdf` (41 pages), `NullProjectedSYM_journal-tex.zip` (main.tex, pdfLaTeX, with the Python programs in `anc/`) and the unpacked source in `source/`. It is the Hexagon v4 text with a title-page footnote naming the preprint https://hexagonmath.org/2610.00471v3.
+
 ## Hexagon v4 package
 
 [hexagon-v4](hexagon-v4/) holds the fourth version, replacing https://hexagonmath.org/2610.00471v3: `NullProjectedSYM_v4-tex.zip` (upload this; main.tex, pdfLaTeX; the six Python programs are in its `anc/` folder), `NullProjectedSYM_v4.pdf` (41 pages), `NullProjectedSYM_v4-arxiv.tar.gz`, `HEXAGON_FORM.md`, `AI_PROVENANCE.md`, and the unpacked source in `source/`.
