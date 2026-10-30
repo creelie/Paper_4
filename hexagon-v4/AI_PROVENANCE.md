@@ -2,7 +2,7 @@
 
 Author and submitting contributor: Deep Bhattacharjee, ORCID 0000-0003-0466-750X.
 Earlier versions: https://hexagonmath.org/2610.00471v1, https://hexagonmath.org/2610.00471v2, https://hexagonmath.org/2610.00471v3
-Source: https://github.com/creelie/Paper_4 (release v2.1.1, https://doi.org/10.5281/zenodo.23789066; release v2.1.0, the same mathematics, is https://doi.org/10.5281/zenodo.23788708; release v2.0.0, an earlier package of this version, is https://doi.org/10.5281/zenodo.23787988; all releases under the concept record https://doi.org/10.5281/zenodo.23612780; the third version is release v1.6.0, https://doi.org/10.5281/zenodo.23746593)
+Source: https://github.com/creelie/Paper_4 (release v2.2.0; earlier packages of this version are release v2.1.1, https://doi.org/10.5281/zenodo.23789066, release v2.1.0, https://doi.org/10.5281/zenodo.23788708, and release v2.0.0, https://doi.org/10.5281/zenodo.23787988; all releases under the concept record https://doi.org/10.5281/zenodo.23612780; the third version is release v1.6.0, https://doi.org/10.5281/zenodo.23746593)
 
 ## Declarations
 
@@ -76,11 +76,19 @@ editing.
   transformations give theories with residual dimension two in every (k+1)+(k+1), with
   vanishing cubic terms and off-shell closure) with Corollary 5.15 (the Main Theorem is a
   classification), Proposition 7.5 (several gauginos with their own parameters are
-  impossible for residual dimension at least three) and Remark 7.6 (why no statement about
+  impossible for residual dimension at least three) and Remark 7.16 (why no statement about
   the superalgebra alone can exclude every theory); Appendix F and the program
   residual_two_check.py; and, at the author's request, a shorter abstract that states the
-  classification. The corresponding changes were made to the introduction, Section 7.4,
-  Remark 7.7, the conclusions and the proof map.
+  classification.
+- After the author asked again to close the remaining open questions, a second Claude Code
+  session drafted Theorems 7.6 and 7.11, Corollaries 7.7 and 7.12, Lemma 7.13, Proposition
+  7.14 and Remark 7.15 (mixed gauginos, any bilinear gauge bracket, nonlinear rules and
+  auxiliary fields) with the program mixed_check.py. Claude Code in this session re-derived
+  every step, added Lemma 7.8 and Proposition 7.9 (the converse for residual dimension four
+  and six, by representation theory) and twelve checks of the diagonal terms, corrected three
+  statements that went beyond the proofs, moved the checks to Appendix G and updated the
+  abstract. The corresponding changes were made to the introduction, Section 7.7,
+  Remarks 7.16 and 7.17, the conclusions and the proof map.
 - Claude Code identified the citations of unrefereed preprints (Truini-Marrani-Rios,
   arXiv:1909.00357; Banerjee, arXiv:2401.13706; two self-archived Zenodo copies of
   earlier versions), replaced the first by its published version (Expo. Math. 43 (2025)
@@ -112,8 +120,14 @@ editing.
   residual_two_check.py, 50 checks passed, 0 failed (the axioms and off-shell closure in
   1+1, 2+2, 3+3 and 4+4, Nishino's theories in 9+1 and 10+2 as controls, and nonzero
   cross terms of two gauginos for residual dimensions 4, 6, 8 and 10).
+- Theorems 7.6 and 7.11, Lemmas 7.8 and 7.13 and Propositions 7.9 and 7.14 were re-derived
+  by hand: the projection of the cross term to the occupied corner, the chirality step, the
+  trace u = j G(sigma, y) with j = -(D'-2)/N, the swap that forces j^2 = 1 and N = D'-2, the
+  separation of the symmetric and antisymmetric parts of a bracket, the case analysis of
+  pi_2(delta E), and the decompositions (3,2), (2,3) for sl2 + sl2 and Sym^2 4 x 4 = 20 + 20
+  for sl4; mixed_check.py, 122 checks passed, 0 failed.
 - Build: pdflatex -jobname=output main.tex, three passes, 0 errors, 0 overfull or
-  underfull boxes, no undefined references; 35 pages. Every page was rendered and read.
+  underfull boxes, no undefined references; 41 pages. Every page was rendered and read.
 - References: all 40 DOIs resolve to the cited works (39 in Crossref, the Zenodo concept
   record in DataCite); all 21 arXiv identifiers match their titles and authors, and each
   of them belongs to a published work. Not verified online: Deligne, "Notes on spinors" (1999),
@@ -121,7 +135,8 @@ editing.
   entry follows the printed volume. Lam's Graduate Studies in Mathematics 67 shows 2004
   in Crossref and 2005 on the printed book, and Lawson-Michelsohn's Spin Geometry shows
   1990 for its De Gruyter record against 1989 for the Princeton edition; the
-  bibliography keeps the printed years.
+  bibliography keeps the printed years. The reference added in version 2.2.0, Fulton and
+  Harris, Representation Theory (GTM 129), resolves in Crossref (doi:10.1007/978-1-4612-0979-9).
 - No general Lean formalisation is claimed. The gamma-matrix computations are finite
   numerical checks in double precision.
 
