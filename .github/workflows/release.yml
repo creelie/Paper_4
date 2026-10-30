@@ -1,16 +1,16 @@
 name: release
 
 # Run by hand from the Actions tab after the pull request is merged. It runs the supplementary
-# gamma-matrix checks, then publishes a GitHub release with the Hexagon v3 package in
-# hexagon-v3/ and the notes in .github/RELEASE_NOTES.md.
+# gamma-matrix checks, then publishes a GitHub release with the Hexagon v4 package in
+# hexagon-v4/ and the notes in .github/RELEASE_NOTES.md.
 
 on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Release tag, e.g. v1.6.0"
+        description: "Release tag, e.g. v2.0.0"
         required: true
-        default: "v1.6.0"
+        default: "v2.0.0"
       target:
         description: "Branch or commit to tag"
         required: true
@@ -18,7 +18,7 @@ on:
       title:
         description: "Release title"
         required: true
-        default: "Hexagon v3 package of Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories"
+        default: "Hexagon v4 package of Residual-dimension obstructions for null-projected supersymmetric Yang-Mills theories"
 
 permissions:
   contents: write
@@ -39,6 +39,7 @@ jobs:
           python -m pip install -r verification/code/requirements.txt
           python scripts/verify.py
           python verification/code/transfer_check.py
+          python verification/code/contraction_check.py
 
   release:
     needs: checks
@@ -49,11 +50,11 @@ jobs:
           ref: ${{ inputs.target }}
       - name: Check the package files
         run: |
-          for f in hexagon-v3/NullProjectedSYM_v3.pdf \
-                   hexagon-v3/NullProjectedSYM_v3-tex.zip \
-                   hexagon-v3/NullProjectedSYM_v3-arxiv.tar.gz \
-                   hexagon-v3/HEXAGON_FORM.md \
-                   hexagon-v3/AI_PROVENANCE.md; do
+          for f in hexagon-v4/NullProjectedSYM_v4.pdf \
+                   hexagon-v4/NullProjectedSYM_v4-tex.zip \
+                   hexagon-v4/NullProjectedSYM_v4-arxiv.tar.gz \
+                   hexagon-v4/HEXAGON_FORM.md \
+                   hexagon-v4/AI_PROVENANCE.md; do
             test -s "$f" || { echo "missing $f"; exit 1; }
           done
       - name: Publish the release
@@ -63,7 +64,7 @@ jobs:
           TARGET: ${{ inputs.target }}
           TITLE: ${{ inputs.title }}
         run: |
-          gh release create "$TAG" hexagon-v3/NullProjectedSYM_v3* hexagon-v3/HEXAGON_FORM.md hexagon-v3/AI_PROVENANCE.md \
+          gh release create "$TAG" hexagon-v4/NullProjectedSYM_v4* hexagon-v4/HEXAGON_FORM.md hexagon-v4/AI_PROVENANCE.md \
             --target "$TARGET" \
             --title "$TAG: $TITLE" \
             --notes-file .github/RELEASE_NOTES.md
